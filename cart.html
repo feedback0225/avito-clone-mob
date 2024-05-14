@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru" class="page cart__page">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+    <title>Авито: корзина</title>
+  </head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="p-header">
+        <div class="container">
+          <div class="p-header__inner">
+            <button
+              type="button"
+              class="btn-reset p-header__btn"
+              onclick="Return()"
+            >
+              <img
+                loading="lazy"
+                src="img/arrow.svg"
+                alt="Иконка стрелки"
+                class="image"
+                width="24"
+                height="24"
+                style="rotate: -90deg"
+              />
+            </button>
+            <span class="cart__header-title">
+              Корзина
+            </span>
+          </div>
+        </div>
+      </header>
+      <script>
+        function Return() {
+          window.history.back();
+        }
+      </script>
+      <main class="main"><section class="cart">
+  <div class="container">
+    <div class="cart__inner">
+      <div class="cart__nav">
+        <div>
+          <input type="checkbox" class="filter__checkbox" id="selectAll" />
+          <label class="filter__label" for="selectAll"> Выбрать всё </label>
+        </div>
+        <a href="#" class="cart__link"> Удалить <span>2</span> </a>
+      </div>
+      <ul class="cart__list list-reset">
+        <li class="cart__item">
+          <div class="cart__user">
+            <div>
+              <input type="checkbox" class="filter__checkbox" id="select1" />
+              <label class="filter__label" for="select1"></label>
+            </div>
+            <div class="cart__user-content">
+              <span class="cart__user-name"> Екатерина </span>
+              <svg class="cart__user-star" width="16" height="16">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <span class="cart__user-rating">5,0</span>
+              <span class="cart__user-num">17</span>
+            </div>
+          </div>
+          <div class="cart__catalog">
+            <div class="cart__product">
+              <div>
+                <input type="checkbox" class="filter__checkbox" id="select3" />
+                <label class="filter__label" for="select3"></label>
+              </div>
+              <div class="cart__product-picture">
+                <img
+                  loading="lazy"
+                  src="img/cart.png"
+                  alt="Телевизор TCL 50P637, 50(127см). UHD 4K"
+                  class="image cart__image"
+                  width="96"
+                  height="96"
+                />
+              </div>
+              <div class="cart__product-description">
+                <span class="cart__price">28 000 ₽</span>
+                <span class="cart__title"
+                  >Телевизор TCL 50P637, 50(127 см). UHD 4K</span
+                >
+                <div class="cart__quantity">
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="cart__quantity-num">1</div>
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a href="#" class="cart__catalog-link"> Купить с доставкой </a>
+              </div>
+              <ul class="cart__catalog-list list-reset">
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/like_black.svg"
+                      alt="Иконка лайка"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/delete.svg"
+                      alt="Иконка корзины"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="cart__product">
+              <div>
+                <input type="checkbox" class="filter__checkbox" id="select4" />
+                <label class="filter__label" for="select4"></label>
+              </div>
+              <div class="cart__product-picture">
+                <img
+                  loading="lazy"
+                  src="img/cart.png"
+                  alt="Телевизор TCL 50P637, 50(127см). UHD 4K"
+                  class="image cart__image"
+                  width="96"
+                  height="96"
+                />
+              </div>
+              <div class="cart__product-description">
+                <span class="cart__price">28 000 ₽</span>
+                <span class="cart__title"
+                  >Телевизор TCL 50P637, 50(127 см). UHD 4K</span
+                >
+                <div class="cart__quantity">
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="cart__quantity-num">1</div>
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a href="#" class="cart__catalog-link"> Купить с доставкой </a>
+              </div>
+              <ul class="cart__catalog-list list-reset">
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/like_black.svg"
+                      alt="Иконка лайка"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/delete.svg"
+                      alt="Иконка корзины"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="cart__item">
+          <div class="cart__user">
+            <div>
+              <input type="checkbox" class="filter__checkbox" id="select5" />
+              <label class="filter__label" for="select5"></label>
+            </div>
+            <div class="cart__user-content">
+              <span class="cart__user-name"> Екатерина </span>
+              <svg class="cart__user-star" width="16" height="16">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <span class="cart__user-rating">5,0</span>
+              <span class="cart__user-num">17</span>
+            </div>
+          </div>
+          <div class="cart__catalog">
+            <div class="cart__product">
+              <div>
+                <input type="checkbox" class="filter__checkbox" id="select6" />
+                <label class="filter__label" for="select6"></label>
+              </div>
+              <div class="cart__product-picture">
+                <img
+                  loading="lazy"
+                  src="img/cart.png"
+                  alt="Телевизор TCL 50P637, 50(127см). UHD 4K"
+                  class="image cart__image"
+                  width="96"
+                  height="96"
+                />
+              </div>
+              <div class="cart__product-description">
+                <span class="cart__price">28 000 ₽</span>
+                <span class="cart__title"
+                  >Телевизор TCL 50P637, 50(127 см). UHD 4K</span
+                >
+                <div class="cart__quantity">
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="cart__quantity-num">1</div>
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a href="#" class="cart__catalog-link"> Купить с доставкой </a>
+              </div>
+              <ul class="cart__catalog-list list-reset">
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/like_black.svg"
+                      alt="Иконка лайка"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/delete.svg"
+                      alt="Иконка корзины"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="cart__product">
+              <div>
+                <input type="checkbox" class="filter__checkbox" id="select7" />
+                <label class="filter__label" for="select7"></label>
+              </div>
+              <div class="cart__product-picture">
+                <img
+                  loading="lazy"
+                  src="img/cart.png"
+                  alt="Телевизор TCL 50P637, 50(127см). UHD 4K"
+                  class="image cart__image"
+                  width="96"
+                  height="96"
+                />
+              </div>
+              <div class="cart__product-description">
+                <span class="cart__price">28 000 ₽</span>
+                <span class="cart__title"
+                  >Телевизор TCL 50P637, 50(127 см). UHD 4K</span
+                >
+                <div class="cart__quantity">
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <div class="cart__quantity-num">1</div>
+                  <button type="button" class="btn-reset cart__quantity-btn">
+                    <svg class="cart__quantity-svg" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <a href="#" class="cart__catalog-link"> Купить с доставкой </a>
+              </div>
+              <ul class="cart__catalog-list list-reset">
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/like_black.svg"
+                      alt="Иконка лайка"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+                <li class="cart__catalog-item">
+                  <button type="button" class="btn-reset cart__catalog-btn">
+                    <img
+                      loading="lazy"
+                      src="img/delete.svg"
+                      alt="Иконка корзины"
+                      class="image"
+                      width="20"
+                      height="20"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="cart__tab">
+        <div class="cart__tab-content">
+          <span class="cart__tab-text">3 товара</span>
+          <div class="cart__tab-border"></div>
+          <span class="cart__tab-text">240 000 ₽</span>
+        </div>
+        <div class="cart__tab-content">
+          <span class="cart__tab-title">Цена без доставки</span>
+          <div class="cart__tab-border"></div>
+          <span class="cart__tab-title">240 000 ₽</span>
+        </div>
+        <button type="button" class="btn-reset cart__tab-btn">
+          Оформить доставку
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+    </div>
+  </body>
+</html>

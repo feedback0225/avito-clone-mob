@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+  <title>Авито: избранное</title>
+</head>
+
+<body class="page__body">
+  <div class="site-container favorites-body">
+    <main class="main">
+      <section class="favorites">
+  <div class="container">
+    <div class="favorites__inner">
+      <div class="tabs" data-tabs="favorites">
+        <ul class="tabs__nav">
+          <li class="tabs__nav-item">
+            <button class="tabs__nav-btn btn-reset" type="button">
+              Объявления
+            </button>
+          </li>
+          <li class="tabs__nav-item">
+            <button class="tabs__nav-btn btn-reset" type="button">
+              Подборки
+            </button>
+          </li>
+          <li class="tabs__nav-item">
+            <button class="tabs__nav-btn btn-reset" type="button">
+              Поиски
+            </button>
+          </li>
+          <li class="tabs__nav-item">
+            <button class="tabs__nav-btn btn-reset" type="button">
+              Сравнение
+            </button>
+          </li>
+          <li class="tabs__nav-item">
+            <button class="tabs__nav-btn btn-reset" type="button">
+              Профили
+            </button>
+          </li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel favorites-ads">
+            <div class="favorites__header">
+              <h1 class="favorites__title">
+                Избранное
+              </h1>
+              <div class="favorites__content">
+                <button type="button" class="btn-reset favorites__btn favorites-header-more" onclick='openMenu()'>
+                  <img
+                    loading="lazy"
+                    src="img/more.svg"
+                    alt="Иконка три точи"
+                    class="image"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+                <div class="favorites__menu is-hidden">
+                  <a href="#" class="favorites__link">
+                    Удалить все
+                  </a>
+                  <a href="#" class="favorites__link">
+                    Удалить неактивные
+                  </a>
+                  <div class="favorites__menu-bg" onclick='openMenu()'></div>
+                </div>
+                <script>
+                  function openMenu() {
+                    document.querySelector(".favorites__menu").classList.toggle("is-hidden")
+                  }
+                </script>
+                <a href='cart.html'>
+                  <img
+                    loading="lazy"
+                    src="img/cart.svg"
+                    alt="Иконка корзины"
+                    class="image"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </div>
+            </div>
+            <ul class="list-reset x-overflow favorites-ads__list">
+              <li class="favorites-ads__item favorites-ads-active-item">
+                <button type="button" class="btn-reset favorites-ads__btn">
+                  Все 1
+                </button>
+              </li>
+              <li class="favorites-ads__item">
+                <button type="button" class="btn-reset favorites-ads__btn">
+                  Телефоны 1
+                </button>
+              </li>
+            </ul>
+            <button type="button" class="btn-reset favorites-ads__filter" data-graph-path='filter' data-graph-animation="fadeInUp"
+            data-graph-speed="200">
+              <img
+                loading="lazy"
+                src="img/filter.svg"
+                alt="Иконка сортировки"
+                class="image"
+                width="16"
+                height="16"
+              />
+              <span>Сначала недавнее</span>
+            </button>
+            <ul class="favorites-ads__market list-reset">
+              <li class="product">
+    <div class="product__inner">
+      <a href="#">
+        <div class="product__picture">
+          <img
+            loading="lazy"
+            width="140"
+            height="140"
+            src="img/product.png"
+            alt="Металлопрокат Навес"
+            class="image"
+          />
+          <div class="product__features">
+            <svg
+              width="12"
+              height="20"
+              role="img"
+              aria-hidden="true"
+              data-icon="delivery"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <filter
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+                filterUnits="objectBoundingBox"
+              >
+                <feDropShadow
+                  dx="0.05"
+                  dy="0.05"
+                  stdDeviation="1"
+                  flood-color="#a9a9a9"
+                  flood-opacity="0.8"
+                ></feDropShadow>
+              </filter>
+              <path
+                d="M0 5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h1V9a1 1 0 0 1 1-1h2.59a1 1 0 0 1 .7.3l4.42 4.4a1 1 0 0 1 .29.71V17a1 1 0 0 1-1 1h-1.04a3.5 3.5 0 0 1-6.92 0H8.96A3.5 3.5 0 0 1 2 17.5v-.04A4 4 0 0 1 0 14V5Zm17.09 13a1.5 1.5 0 1 0 2.82-1 1.5 1.5 0 0 0-2.82 1ZM5.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      <div class="product__description">
+        <a href="#" class="product__title">
+          Металлопрокат «Навес»
+        </a>
+        <a href="#" class="product__price">
+          10 000 ₽
+        </a>
+        <a href="#">
+          <div class="product__owner">
+            <span class="product__owner-value">
+              ТПК КомплексСтрой —
+              сетки, ворота, профнастил, металл, столбы
+            </span>
+            <div class="product__rating">
+              <svg
+                width="12"
+                height="12"
+                role="img"
+                aria-hidden="true"
+                data-icon="rating"
+                viewBox="0 0 24 24"
+                fill="#F7BE00"
+              >
+                <path
+                  d="m12 17.99-5.9 3.9a.66.66 0 0 1-1-.71L7 14.35 1.44 9.94a.66.66 0 0 1 .38-1.17l7.07-.31 2.48-6.64a.66.66 0 0 1 1.24 0l2.48 6.64 7.07.3a.66.66 0 0 1 .38 1.18l-5.54 4.4 1.9 6.84a.66.66 0 0 1-1 .72L12 17.99Z"
+                ></path>
+              </svg>
+              <span class="product__rating-value">
+                5,0 <span class="product__feedback">3</span>
+              </span>
+            </div>
+          </div>
+          <div class="product__location">
+            Горьковская
+            <div class="product__location-time">
+              <svg
+                width="14"
+                height="14"
+                role="img"
+                aria-hidden="true"
+                data-icon="walking-route"
+                viewBox="0 0 24 24"
+                fill="rgb(117, 117, 117)"
+              >
+                <path
+                  d="M16.13 2.8c-.24 1.28-1.42 2.1-2.81 1.88a2.38 2.38 0 0 1-1.85-2.84 2.38 2.38 0 0 1 4.66.97ZM8.78 15.45 3.44 20.9a1.5 1.5 0 0 0 .1 2.21c.68.59 1.74.54 2.37-.1L11 17.83l-1.7-1.45c-.29-.25-.47-.58-.52-.93Zm-2.73-2.8c.71.53 1.73.38 2.26-.31l2.35-3.06.12-.04-.99 5.2c-.1.52.1 1.03.47 1.38.07.08.14.15.23.22l3.55 2.84 1.87 4.17c.36.8 1.34 1.17 2.2.84a1.53 1.53 0 0 0 .89-2.05l-2.02-4.52c-.1-.22-.26-.42-.46-.58l-3.27-2.61.67-3.54.76.88c.23.26.53.45.88.54l3.33.83c.9.22 1.82-.28 2.05-1.11.24-.84-.29-1.7-1.18-1.92l-2.8-.7-2.56-2.98a1.64 1.64 0 0 0-.44-.36A1.72 1.72 0 0 0 13 5.4c-.2-.01-.4 0-.6.07l-3.19.94c-.33.1-.61.3-.82.56l-2.67 3.47c-.53.7-.39 1.68.33 2.2Z"
+                ></path>
+              </svg>
+              <span class="product__location-time-value">
+                16-20мин.
+              </span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product__delivery">
+          Доставка от 1 дня
+        </a>
+        <a href="#" class="product__date"> Сегодня, 18:11 </a>
+      </div>
+      <button class="btn-reset product__btn" type="button">
+        <svg
+          width="20"
+          height="20"
+          role="img"
+          aria-hidden="true"
+          data-icon="favorites"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M1.5 9a6.06 6.06 0 0 1 10.53-4.02 6.01 6.01 0 1 1 8.78 8.23l-8.1 8a1 1 0 0 1-1.41 0l-8.1-8A6.27 6.27 0 0 1 1.5 9Zm6-4c-2.15 0-4 1.85-4 4 0 1.1.46 2.06 1.13 2.81L12 19.1l7.4-7.3A4.01 4.01 0 0 0 16.5 5c-1.5.01-2.89.89-3.63 2.2a1 1 0 0 1-1.76-.04A3.98 3.98 0 0 0 7.5 5Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </li> <li class="product">
+    <div class="product__inner">
+      <a href="#">
+        <div class="product__picture">
+          <img
+            loading="lazy"
+            width="140"
+            height="140"
+            src="img/product.png"
+            alt="Металлопрокат Навес"
+            class="image"
+          />
+          <div class="product__features">
+            <svg
+              width="12"
+              height="20"
+              role="img"
+              aria-hidden="true"
+              data-icon="delivery"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <filter
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+                filterUnits="objectBoundingBox"
+              >
+                <feDropShadow
+                  dx="0.05"
+                  dy="0.05"
+                  stdDeviation="1"
+                  flood-color="#a9a9a9"
+                  flood-opacity="0.8"
+                ></feDropShadow>
+              </filter>
+              <path
+                d="M0 5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h1V9a1 1 0 0 1 1-1h2.59a1 1 0 0 1 .7.3l4.42 4.4a1 1 0 0 1 .29.71V17a1 1 0 0 1-1 1h-1.04a3.5 3.5 0 0 1-6.92 0H8.96A3.5 3.5 0 0 1 2 17.5v-.04A4 4 0 0 1 0 14V5Zm17.09 13a1.5 1.5 0 1 0 2.82-1 1.5 1.5 0 0 0-2.82 1ZM5.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      <div class="product__description">
+        <a href="#" class="product__title">
+          Металлопрокат «Навес»
+        </a>
+        <a href="#" class="product__price">
+          10 000 ₽
+        </a>
+        <a href="#">
+          <div class="product__owner">
+            <span class="product__owner-value">
+              ТПК КомплексСтрой —
+              сетки, ворота, профнастил, металл, столбы
+            </span>
+            <div class="product__rating">
+              <svg
+                width="12"
+                height="12"
+                role="img"
+                aria-hidden="true"
+                data-icon="rating"
+                viewBox="0 0 24 24"
+                fill="#F7BE00"
+              >
+                <path
+                  d="m12 17.99-5.9 3.9a.66.66 0 0 1-1-.71L7 14.35 1.44 9.94a.66.66 0 0 1 .38-1.17l7.07-.31 2.48-6.64a.66.66 0 0 1 1.24 0l2.48 6.64 7.07.3a.66.66 0 0 1 .38 1.18l-5.54 4.4 1.9 6.84a.66.66 0 0 1-1 .72L12 17.99Z"
+                ></path>
+              </svg>
+              <span class="product__rating-value">
+                5,0 <span class="product__feedback">3</span>
+              </span>
+            </div>
+          </div>
+          <div class="product__location">
+            Горьковская
+            <div class="product__location-time">
+              <svg
+                width="14"
+                height="14"
+                role="img"
+                aria-hidden="true"
+                data-icon="walking-route"
+                viewBox="0 0 24 24"
+                fill="rgb(117, 117, 117)"
+              >
+                <path
+                  d="M16.13 2.8c-.24 1.28-1.42 2.1-2.81 1.88a2.38 2.38 0 0 1-1.85-2.84 2.38 2.38 0 0 1 4.66.97ZM8.78 15.45 3.44 20.9a1.5 1.5 0 0 0 .1 2.21c.68.59 1.74.54 2.37-.1L11 17.83l-1.7-1.45c-.29-.25-.47-.58-.52-.93Zm-2.73-2.8c.71.53 1.73.38 2.26-.31l2.35-3.06.12-.04-.99 5.2c-.1.52.1 1.03.47 1.38.07.08.14.15.23.22l3.55 2.84 1.87 4.17c.36.8 1.34 1.17 2.2.84a1.53 1.53 0 0 0 .89-2.05l-2.02-4.52c-.1-.22-.26-.42-.46-.58l-3.27-2.61.67-3.54.76.88c.23.26.53.45.88.54l3.33.83c.9.22 1.82-.28 2.05-1.11.24-.84-.29-1.7-1.18-1.92l-2.8-.7-2.56-2.98a1.64 1.64 0 0 0-.44-.36A1.72 1.72 0 0 0 13 5.4c-.2-.01-.4 0-.6.07l-3.19.94c-.33.1-.61.3-.82.56l-2.67 3.47c-.53.7-.39 1.68.33 2.2Z"
+                ></path>
+              </svg>
+              <span class="product__location-time-value">
+                16-20мин.
+              </span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product__delivery">
+          Доставка от 1 дня
+        </a>
+        <a href="#" class="product__date"> Сегодня, 18:11 </a>
+      </div>
+      <button class="btn-reset product__btn" type="button">
+        <svg
+          width="20"
+          height="20"
+          role="img"
+          aria-hidden="true"
+          data-icon="favorites"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M1.5 9a6.06 6.06 0 0 1 10.53-4.02 6.01 6.01 0 1 1 8.78 8.23l-8.1 8a1 1 0 0 1-1.41 0l-8.1-8A6.27 6.27 0 0 1 1.5 9Zm6-4c-2.15 0-4 1.85-4 4 0 1.1.46 2.06 1.13 2.81L12 19.1l7.4-7.3A4.01 4.01 0 0 0 16.5 5c-1.5.01-2.89.89-3.63 2.2a1 1 0 0 1-1.76-.04A3.98 3.98 0 0 0 7.5 5Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </li>
+              <li class="product">
+    <div class="product__inner">
+      <a href="#">
+        <div class="product__picture">
+          <img
+            loading="lazy"
+            width="140"
+            height="140"
+            src="img/product.png"
+            alt="Металлопрокат Навес"
+            class="image"
+          />
+          <div class="product__features">
+            <svg
+              width="12"
+              height="20"
+              role="img"
+              aria-hidden="true"
+              data-icon="delivery"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <filter
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+                filterUnits="objectBoundingBox"
+              >
+                <feDropShadow
+                  dx="0.05"
+                  dy="0.05"
+                  stdDeviation="1"
+                  flood-color="#a9a9a9"
+                  flood-opacity="0.8"
+                ></feDropShadow>
+              </filter>
+              <path
+                d="M0 5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h1V9a1 1 0 0 1 1-1h2.59a1 1 0 0 1 .7.3l4.42 4.4a1 1 0 0 1 .29.71V17a1 1 0 0 1-1 1h-1.04a3.5 3.5 0 0 1-6.92 0H8.96A3.5 3.5 0 0 1 2 17.5v-.04A4 4 0 0 1 0 14V5Zm17.09 13a1.5 1.5 0 1 0 2.82-1 1.5 1.5 0 0 0-2.82 1ZM5.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      <div class="product__description">
+        <a href="#" class="product__title">
+          Металлопрокат «Навес»
+        </a>
+        <a href="#" class="product__price">
+          10 000 ₽
+        </a>
+        <a href="#">
+          <div class="product__owner">
+            <span class="product__owner-value">
+              ТПК КомплексСтрой —
+              сетки, ворота, профнастил, металл, столбы
+            </span>
+            <div class="product__rating">
+              <svg
+                width="12"
+                height="12"
+                role="img"
+                aria-hidden="true"
+                data-icon="rating"
+                viewBox="0 0 24 24"
+                fill="#F7BE00"
+              >
+                <path
+                  d="m12 17.99-5.9 3.9a.66.66 0 0 1-1-.71L7 14.35 1.44 9.94a.66.66 0 0 1 .38-1.17l7.07-.31 2.48-6.64a.66.66 0 0 1 1.24 0l2.48 6.64 7.07.3a.66.66 0 0 1 .38 1.18l-5.54 4.4 1.9 6.84a.66.66 0 0 1-1 .72L12 17.99Z"
+                ></path>
+              </svg>
+              <span class="product__rating-value">
+                5,0 <span class="product__feedback">3</span>
+              </span>
+            </div>
+          </div>
+          <div class="product__location">
+            Горьковская
+            <div class="product__location-time">
+              <svg
+                width="14"
+                height="14"
+                role="img"
+                aria-hidden="true"
+                data-icon="walking-route"
+                viewBox="0 0 24 24"
+                fill="rgb(117, 117, 117)"
+              >
+                <path
+                  d="M16.13 2.8c-.24 1.28-1.42 2.1-2.81 1.88a2.38 2.38 0 0 1-1.85-2.84 2.38 2.38 0 0 1 4.66.97ZM8.78 15.45 3.44 20.9a1.5 1.5 0 0 0 .1 2.21c.68.59 1.74.54 2.37-.1L11 17.83l-1.7-1.45c-.29-.25-.47-.58-.52-.93Zm-2.73-2.8c.71.53 1.73.38 2.26-.31l2.35-3.06.12-.04-.99 5.2c-.1.52.1 1.03.47 1.38.07.08.14.15.23.22l3.55 2.84 1.87 4.17c.36.8 1.34 1.17 2.2.84a1.53 1.53 0 0 0 .89-2.05l-2.02-4.52c-.1-.22-.26-.42-.46-.58l-3.27-2.61.67-3.54.76.88c.23.26.53.45.88.54l3.33.83c.9.22 1.82-.28 2.05-1.11.24-.84-.29-1.7-1.18-1.92l-2.8-.7-2.56-2.98a1.64 1.64 0 0 0-.44-.36A1.72 1.72 0 0 0 13 5.4c-.2-.01-.4 0-.6.07l-3.19.94c-.33.1-.61.3-.82.56l-2.67 3.47c-.53.7-.39 1.68.33 2.2Z"
+                ></path>
+              </svg>
+              <span class="product__location-time-value">
+                16-20мин.
+              </span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product__delivery">
+          Доставка от 1 дня
+        </a>
+        <a href="#" class="product__date"> Сегодня, 18:11 </a>
+      </div>
+      <button class="btn-reset product__btn" type="button">
+        <svg
+          width="20"
+          height="20"
+          role="img"
+          aria-hidden="true"
+          data-icon="favorites"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M1.5 9a6.06 6.06 0 0 1 10.53-4.02 6.01 6.01 0 1 1 8.78 8.23l-8.1 8a1 1 0 0 1-1.41 0l-8.1-8A6.27 6.27 0 0 1 1.5 9Zm6-4c-2.15 0-4 1.85-4 4 0 1.1.46 2.06 1.13 2.81L12 19.1l7.4-7.3A4.01 4.01 0 0 0 16.5 5c-1.5.01-2.89.89-3.63 2.2a1 1 0 0 1-1.76-.04A3.98 3.98 0 0 0 7.5 5Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </li> <li class="product">
+    <div class="product__inner">
+      <a href="#">
+        <div class="product__picture">
+          <img
+            loading="lazy"
+            width="140"
+            height="140"
+            src="img/product.png"
+            alt="Металлопрокат Навес"
+            class="image"
+          />
+          <div class="product__features">
+            <svg
+              width="12"
+              height="20"
+              role="img"
+              aria-hidden="true"
+              data-icon="delivery"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <filter
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%"
+                filterUnits="objectBoundingBox"
+              >
+                <feDropShadow
+                  dx="0.05"
+                  dy="0.05"
+                  stdDeviation="1"
+                  flood-color="#a9a9a9"
+                  flood-opacity="0.8"
+                ></feDropShadow>
+              </filter>
+              <path
+                d="M0 5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h1V9a1 1 0 0 1 1-1h2.59a1 1 0 0 1 .7.3l4.42 4.4a1 1 0 0 1 .29.71V17a1 1 0 0 1-1 1h-1.04a3.5 3.5 0 0 1-6.92 0H8.96A3.5 3.5 0 0 1 2 17.5v-.04A4 4 0 0 1 0 14V5Zm17.09 13a1.5 1.5 0 1 0 2.82-1 1.5 1.5 0 0 0-2.82 1ZM5.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      <div class="product__description">
+        <a href="#" class="product__title">
+          Металлопрокат «Навес»
+        </a>
+        <a href="#" class="product__price">
+          10 000 ₽
+        </a>
+        <a href="#">
+          <div class="product__owner">
+            <span class="product__owner-value">
+              ТПК КомплексСтрой —
+              сетки, ворота, профнастил, металл, столбы
+            </span>
+            <div class="product__rating">
+              <svg
+                width="12"
+                height="12"
+                role="img"
+                aria-hidden="true"
+                data-icon="rating"
+                viewBox="0 0 24 24"
+                fill="#F7BE00"
+              >
+                <path
+                  d="m12 17.99-5.9 3.9a.66.66 0 0 1-1-.71L7 14.35 1.44 9.94a.66.66 0 0 1 .38-1.17l7.07-.31 2.48-6.64a.66.66 0 0 1 1.24 0l2.48 6.64 7.07.3a.66.66 0 0 1 .38 1.18l-5.54 4.4 1.9 6.84a.66.66 0 0 1-1 .72L12 17.99Z"
+                ></path>
+              </svg>
+              <span class="product__rating-value">
+                5,0 <span class="product__feedback">3</span>
+              </span>
+            </div>
+          </div>
+          <div class="product__location">
+            Горьковская
+            <div class="product__location-time">
+              <svg
+                width="14"
+                height="14"
+                role="img"
+                aria-hidden="true"
+                data-icon="walking-route"
+                viewBox="0 0 24 24"
+                fill="rgb(117, 117, 117)"
+              >
+                <path
+                  d="M16.13 2.8c-.24 1.28-1.42 2.1-2.81 1.88a2.38 2.38 0 0 1-1.85-2.84 2.38 2.38 0 0 1 4.66.97ZM8.78 15.45 3.44 20.9a1.5 1.5 0 0 0 .1 2.21c.68.59 1.74.54 2.37-.1L11 17.83l-1.7-1.45c-.29-.25-.47-.58-.52-.93Zm-2.73-2.8c.71.53 1.73.38 2.26-.31l2.35-3.06.12-.04-.99 5.2c-.1.52.1 1.03.47 1.38.07.08.14.15.23.22l3.55 2.84 1.87 4.17c.36.8 1.34 1.17 2.2.84a1.53 1.53 0 0 0 .89-2.05l-2.02-4.52c-.1-.22-.26-.42-.46-.58l-3.27-2.61.67-3.54.76.88c.23.26.53.45.88.54l3.33.83c.9.22 1.82-.28 2.05-1.11.24-.84-.29-1.7-1.18-1.92l-2.8-.7-2.56-2.98a1.64 1.64 0 0 0-.44-.36A1.72 1.72 0 0 0 13 5.4c-.2-.01-.4 0-.6.07l-3.19.94c-.33.1-.61.3-.82.56l-2.67 3.47c-.53.7-.39 1.68.33 2.2Z"
+                ></path>
+              </svg>
+              <span class="product__location-time-value">
+                16-20мин.
+              </span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="product__delivery">
+          Доставка от 1 дня
+        </a>
+        <a href="#" class="product__date"> Сегодня, 18:11 </a>
+      </div>
+      <button class="btn-reset product__btn" type="button">
+        <svg
+          width="20"
+          height="20"
+          role="img"
+          aria-hidden="true"
+          data-icon="favorites"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M1.5 9a6.06 6.06 0 0 1 10.53-4.02 6.01 6.01 0 1 1 8.78 8.23l-8.1 8a1 1 0 0 1-1.41 0l-8.1-8A6.27 6.27 0 0 1 1.5 9Zm6-4c-2.15 0-4 1.85-4 4 0 1.1.46 2.06 1.13 2.81L12 19.1l7.4-7.3A4.01 4.01 0 0 0 16.5 5c-1.5.01-2.89.89-3.63 2.2a1 1 0 0 1-1.76-.04A3.98 3.98 0 0 0 7.5 5Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </li>
+            </ul>
+          </div>
+          <div class="tabs__panel favorites-selection">
+            <div class="favorites__header">
+              <h1 class="favorites__title">
+                Избранное
+              </h1>
+            </div>
+            <ul class="favorites-selection__list list-reset">
+              <li class="favorites-selection__item">
+                <img
+                  loading="lazy"
+                  src="img/product.png"
+                  alt="Картинка"
+                  class="image"
+                  width="138"
+                  height="138"
+                />
+                <div class="favorites-selection__content">
+                  <div class="favorites-selection__description">
+                    <div class="favorites-selection__title">IT123</div>
+                    <div class="favorites-selection__num">2 объявления</div>
+                  </div>
+                  <ul class="favorites-selection__content-list list-reset">
+                    <li class="favorites-selection__content-item">
+                      <button
+                        type="button"
+                        class="btn-reset favorites-selection__content-btn"
+                      >
+                        <img
+                          loading="lazy"
+                          src="img/more.svg"
+                          alt="Иконка три точи"
+                          class="image"
+                          width="20"
+                          height="20"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="favorites-selection__item">
+                <img
+                  loading="lazy"
+                  src="img/product.png"
+                  alt="Картинка"
+                  class="image"
+                  width="138"
+                  height="138"
+                />
+                <div class="favorites-selection__content">
+                  <div class="favorites-selection__description">
+                    <div class="favorites-selection__title">IT123</div>
+                    <div class="favorites-selection__num">2 объявления</div>
+                  </div>
+                  <ul class="favorites-selection__content-list list-reset">
+                    <li class="favorites-selection__content-item">
+                      <button
+                        type="button"
+                        class="btn-reset favorites-selection__content-btn"
+                      >
+                        <img
+                          loading="lazy"
+                          src="img/more.svg"
+                          alt="Иконка три точи"
+                          class="image"
+                          width="20"
+                          height="20"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__panel favorites-search">
+            <div class="favorites__header">
+              <h1 class="favorites__title">
+                Избранное
+              </h1>
+            </div>
+            <ul class="favorites-search__list list-reset">
+              <li class="favorites-search__item">
+                <a href="#">
+                  <div class="favorites-search__content">
+                    <div class="favorites-search__title">Телефон</div>
+                    <div class="favorites-search__path">
+                      Электроника, Все регионы
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="btn-reset favorites-search__btn">
+                  <img
+                    loading="lazy"
+                    src="img/more.svg"
+                    alt="Иконка три точи"
+                    class="image"
+                    width="20"
+                    height="20"
+                  />
+                </button>
+              </li>
+              <li class="favorites-search__item">
+                <a href="#">
+                  <div class="favorites-search__content">
+                    <div class="favorites-search__title">Телефон</div>
+                    <div class="favorites-search__path">
+                      Электроника, Все регионы
+                    </div>
+                  </div>
+                </a>
+                <button type="button" class="btn-reset favorites-search__btn">
+                  <img
+                    loading="lazy"
+                    src="img/more.svg"
+                    alt="Иконка три точи"
+                    class="image"
+                    width="20"
+                    height="20"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__panel">
+            <div class="favorites__header">
+              <h1 class="favorites__title">
+                Избранное
+              </h1>
+            </div>
+            <div class="favorites-compare">
+              <ul class="favorites-compare__list list-reset">
+                <li class="favorites-compare__item">
+                  <a href="#">
+                    <div class="favorites-compare__description">
+                      <div class="favorites-compare__title">Автомобили</div>
+                      <div class="favorites-compare__num">2 объявления</div>
+                    </div>
+                    <div class="favorites-compare__pictures">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="44"
+                        height="34"
+                      />
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="44"
+                        height="34"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="favorites-compare__item">
+                  <a href="#">
+                    <div class="favorites-compare__description">
+                      <div class="favorites-compare__title">Автомобили</div>
+                      <div class="favorites-compare__num">2 объявления</div>
+                    </div>
+                    <div class="favorites-compare__pictures">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="44"
+                        height="34"
+                      />
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="44"
+                        height="34"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="favorites__header">
+              <h1 class="favorites__title">
+                Избранное
+              </h1>
+              <div class="favorites__content">
+                <button type="button" class="btn-reset favorites__btn">
+                  Изменить
+                </button>
+              </div>
+            </div>
+            <div class="favorites-profile">
+              <div class="favorites-profile__profile x-overflow">
+                <div class="favorites-profile__user">
+                  <img
+                    loading="lazy"
+                    src="img/comment.png"
+                    alt="Вадим"
+                    class="image"
+                    width="50"
+                    height="50"
+                  />
+                  <div class="favorites-profile__user-content">
+                    <div class="favorites-profile__name">Вадим</div>
+                    <div class="favorites-profile__num">6 объявления</div>
+                  </div>
+                </div>
+                <ul class="favorites-profile__list x-overflow list-reset">
+                  <li class="favorites-profile__item">
+                    <a href="#">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="150"
+                        height="150"
+                      />
+                      <div class="favorites-profile__list-content">
+                        <div class="favorites-profile__list-description">
+                          <div class="favorites-profile__list-title">
+                            iPhone 15 Pro, 128 ГБ
+                          </div>
+                          <div class="favorites-profile__list-price">
+                            82 000 ₽
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-reset favorites-profile__btn"
+                        >
+                          <img
+                            loading="lazy"
+                            src="img/like_black.svg"
+                            alt="Лайк"
+                            class="image"
+                            width="18"
+                            height="16"
+                          />
+                        </button>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="favorites-profile__item">
+                    <a href="#">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="150"
+                        height="150"
+                      />
+                      <div class="favorites-profile__list-content">
+                        <div class="favorites-profile__list-description">
+                          <div class="favorites-profile__list-title">
+                            iPhone 15 Pro, 128 ГБ
+                          </div>
+                          <div class="favorites-profile__list-price">
+                            82 000 ₽
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-reset favorites-profile__btn"
+                        >
+                          <img
+                            loading="lazy"
+                            src="img/like_black.svg"
+                            alt="Лайк"
+                            class="image"
+                            width="18"
+                            height="16"
+                          />
+                        </button>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="favorites-profile__item">
+                    <a href="#">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="150"
+                        height="150"
+                      />
+                      <div class="favorites-profile__list-content">
+                        <div class="favorites-profile__list-description">
+                          <div class="favorites-profile__list-title">
+                            iPhone 15 Pro, 128 ГБ
+                          </div>
+                          <div class="favorites-profile__list-price">
+                            82 000 ₽
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-reset favorites-profile__btn"
+                        >
+                          <img
+                            loading="lazy"
+                            src="img/like_black.svg"
+                            alt="Лайк"
+                            class="image"
+                            width="18"
+                            height="16"
+                          />
+                        </button>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="favorites-profile__item">
+                    <a href="#">
+                      <img
+                        loading="lazy"
+                        src="img/product.png"
+                        alt="Картинка"
+                        class="image"
+                        width="150"
+                        height="150"
+                      />
+                      <div class="favorites-profile__list-content">
+                        <div class="favorites-profile__list-description">
+                          <div class="favorites-profile__list-title">
+                            iPhone 15 Pro, 128 ГБ
+                          </div>
+                          <div class="favorites-profile__list-price">
+                            82 000 ₽
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-reset favorites-profile__btn"
+                        >
+                          <img
+                            loading="lazy"
+                            src="img/like_black.svg"
+                            alt="Лайк"
+                            class="image"
+                            width="18"
+                            height="16"
+                          />
+                        </button>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="graph-modal">
+  <div
+          class="graph-modal__container mark"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="filter"
+        >
+          <div class="graph-modal__content">
+            <div class="search">
+              <div class="search__nav">
+                  <button
+                    class="btn-reset graph-modal__close js-modal-close filter-close-btn"
+                    aria-label="Закрыть модальное окно"
+                  ></button>
+                  <div class="search__nav-title">Сначала показывать</div>
+                  <button class="btn-reset search__nav-btn" type="button" style='color: var(--accent-color-2);'>
+                    Сбросить
+                  </button>
+              </div>
+              <ul class="list-reset search__list">
+                <li class="search__item">
+                  <button
+                    class="btn-reset search__btn active-home"
+                    aria-label="Выбрать недавнее"
+                    type="button"
+                  >
+                    <span class="search__item-title">Сначала недавнее</span>
+                    <svg
+                      class="search__btn-svg"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      data-icon="check-round"
+                      viewBox="0 0 24 24"
+                      fill="var(--dark-color)"
+                    >
+                      <path
+                        d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.3-2.3a1 1 0 0 0-1.4-1.4L11 13.58l-2.3-2.3a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0l6-6Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+                <li class="search__item">
+                  <button
+                    class="btn-reset search__btn"
+                    aria-label="Выбрать дороже"
+                    type="button"
+                  >
+                    <span class="search__item-title">Сначала дороже</span>
+                    <svg
+                      class="search__btn-svg"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      data-icon="check-round"
+                      viewBox="0 0 24 24"
+                      fill="var(--dark-color)"
+                    >
+                      <path
+                        d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.3-2.3a1 1 0 0 0-1.4-1.4L11 13.58l-2.3-2.3a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0l6-6Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+                <li class="search__item">
+                  <button
+                    class="btn-reset search__btn"
+                    aria-label="Выбрать дешевле"
+                    type="button"
+                  >
+                    <span class="search__item-title">Сначала дешевле</span>
+                    <svg
+                      class="search__btn-svg"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      data-icon="check-round"
+                      viewBox="0 0 24 24"
+                      fill="var(--dark-color)"
+                    >
+                      <path
+                        d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.3-2.3a1 1 0 0 0-1.4-1.4L11 13.58l-2.3-2.3a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0l6-6Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+                <li class="search__item">
+                  <button
+                    class="btn-reset search__btn"
+                    aria-label="Выбрать близкий"
+                    type="button"
+                  >
+                    <span class="search__item-title">Сначала ближе ко мне</span>
+                    <svg
+                      class="search__btn-svg"
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      data-icon="check-round"
+                      viewBox="0 0 24 24"
+                      fill="var(--dark-color)"
+                    >
+                      <path
+                        d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.3-2.3a1 1 0 0 0-1.4-1.4L11 13.58l-2.3-2.3a1 1 0 0 0-1.4 1.42l3 3a1 1 0 0 0 1.4 0l6-6Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+</div>
+
+    </main>
+    <section class="tab">
+    <div class="tab__inner">
+        <ul class="tab__list list-reset">
+            <li class="tab__item active-link">
+                <a href="/" class="tab__link">
+                    <img loading='lazy' src="img/logo.svg" alt="Иконка авито" class="image" width='30' height='30' />
+                    <span>Поиск</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="favorites.html" class="tab__link">
+                    <img loading='lazy' src="img/svg/like.svg" alt="Иконка сердечка" class="image" width='30' height='30' />
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="ads.html" class="tab__link">
+                    <img loading='lazy' src="img/add.svg" alt="Иконка Объявление" class="image" width='30' height='30' />
+                    <span>Объявление</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="messenger.html" class="tab__link">
+                    <img loading='lazy' src="img/message.svg" alt="Иконка Сообщение" class="image" width='30' height='30' />
+                    <span>Сообщение</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="profile.html" class="tab__link">
+                    <img loading='lazy' src="img/profile.svg" alt="Иконка Профиль" class="image" width='30' height='30' />
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <ul class="footer__list list-reset">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Помощь
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        О компании
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Вакансии
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Безопасность
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Реклама на сайте
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Оферта
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Авито Журнал
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Блог
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Политика о данных пользователей
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Правила Авито
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                © ООО «КЕХ еКоммерц» 2007–2024
+            </p>
+            <div class="footer__content">
+                <a href="#" class="footer__link">
+                    Мобильное приложение
+                </a>
+                <a href="#" class="footer__link">
+                    Полная версия
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+</html>

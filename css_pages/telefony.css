@@ -1,0 +1,39 @@
+.home {
+    margin-top: 230px;
+    background: #F6F3EE;
+    border-radius: 16px;
+}
+.home__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+}
+.home__description {
+}
+.home__title {
+    color: var(--dark-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+.home__text {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+.home__link {
+    display: block;
+    margin-top: 15px;
+    background: var(--light-color);
+    padding: 10px 16px 12px;
+    border-radius: 6px;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: fit-content;
+}

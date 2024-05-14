@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+  <title>Авито: недвижимость, транспорт, работа, услуги, вещи</title>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="p-header retailer__header">
+      <div class="container">
+        <div class="p-header__inner">
+          <button type="button" class="btn-reset p-header__btn" onclick="Return()">
+            <img loading="lazy" src="img/arrow.svg" alt="Иконка стрелки" class="image" width="24" height="24"
+              style="rotate: -90deg" />
+          </button>
+          <div class="p-header__title">
+            G-Store | Apple / Samsung / Dyson
+          </div>
+          <div class="p-header__content">
+            <button type="button" class="btn-reset p-header__btn ya-share2" data-curtain data-shape="round"
+              data-color-scheme="blackwhite" data-limit="0" data-more-button-type="short"
+              data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,moimir,skype,tumblr,evernote,linkedin,lj,blogger,delicious,digg,reddit,pocket,qzone,renren,sinaWeibo,surfingbird,tencentWeibo">
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      function Return() {
+        window.history.back()
+      }
+      function showBtn(btnId, inputId) {
+        const btn = document.getElementById(btnId)
+        const input = document.getElementById(inputId).value
+
+        if (input !== '') {
+          btn.classList.remove("is-hidden")
+        } else if (input === '') {
+          btn.classList.add("is-hidden")
+        } else {
+          btn.classList.add("is-hidden")
+        }
+      }
+      function clearInput(btnId, inputId) {
+        const input = document.getElementById(inputId)
+        const btn = document.getElementById(btnId)
+        btn.classList.add("is-hidden")
+        input.value = ''
+      }
+
+    </script>
+    <main class="main retailer__main"><section class="retailer">
+  <div class="container">
+    <div class="retailer__inner">
+      <div class="retailer__company">
+        <div class="retailer__company-content">
+          <h1 class="retailer__title">G-Store | Apple / Samsung / Dyson</h1>
+          <div class="retailer__rating">
+            <span class="retailer__rating-num">5,0</span>
+            <div class="retailer__star">
+              <svg class="retailer__star-item">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <svg class="retailer__star-item">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <svg class="retailer__star-item">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <svg class="retailer__star-item">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+              <svg class="retailer__star-item">
+                <use xlink:href="img/sprite.svg#star"></use>
+              </svg>
+            </div>
+            <a href="#" class="retailer__link"> 20 отзывов </a>
+          </div>
+          <span class="retailer__subscribers"> 5 подписчиков </span>
+          <span class="retailer__date"> На Авито с декабря 2017 </span>
+        </div>
+        <img
+          loading="lazy"
+          src="img/company.png"
+          alt="G-Store | Apple / Samsung / Dyson"
+          class="image"
+          width="84"
+          height="84"
+        />
+      </div>
+      <div class="retailer__dashboard">
+        <button type="button" class="btn-reset retailer__dashboard-btn">
+          <img
+            loading="lazy"
+            src="images/retailer/cart.png"
+            alt="Иконка корзины"
+            class="image"
+            width="20"
+            height="20"
+          />
+          <span>2 покупки с Авито Доставкой</span>
+        </button>
+        <button type="button" class="btn-reset retailer__dashboard-btn">
+          <img
+            loading="lazy"
+            src="images/retailer/delivery.png"
+            alt="Иконка доставки"
+            class="image"
+            width="20"
+            height="20"
+          />
+          <span>1 продажа с Авито Доставкой</span>
+        </button>
+        <button type="button" class="btn-reset retailer__dashboard-btn">
+          <img
+            loading="lazy"
+            src="images/retailer/success.png"
+            alt="Иконка проверки"
+            class="image"
+            width="20"
+            height="20"
+          />
+          <span>Документы проверены</span>
+        </button>
+        <a href="#" class="retailer__link"> Показать еще 2 </a>
+      </div>
+      <nav class="retailer__menu">
+        <button type="button" class="btn-reset retailer__btn">Написать</button>
+        <button type="button" class="btn-reset retailer__btn">
+          Подписаться
+        </button>
+      </nav>
+      <div class="tabs" data-tabs="retailer">
+        <ul class="tabs__nav retailer__tabs-nav">
+          <li class="tabs__nav-item">
+            <button
+              class="tabs__nav-btn btn-reset retailer__tabs-btn"
+              type="button"
+            >
+              Активные
+              <span class="retailer__tabs-num">64</span>
+            </button>
+          </li>
+          <li class="tabs__nav-item">
+            <button
+              class="tabs__nav-btn btn-reset retailer__tabs-btn"
+              type="button"
+            >
+              Завершенные
+              <span class="retailer__tabs-num">5</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tabs__content">
+          <div class="tabs__panel retailer__panel">
+            <div class="retailer__search">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="input-reset retailer__input"
+                oninput='showBtn("searchClear", "search")'
+              />
+              <button type="button" id='searchClear' class="btn-reset retailer__search-btn is-hidden" onclick='clearInput("searchClear", "search")'>
+                <img
+                  loading="lazy"
+                  src="img/close.svg"
+                  alt="Иконка крестика"
+                  class="image"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <button type="button" class="btn-reset retailer__search-btn" data-graph-path="headerFilter">
+                <img
+                  loading="lazy"
+                  src="img/filter-3.svg"
+                  alt="Иконка фильтра"
+                  class="image"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </div>
+            <ul class="retailer__list catalog__list list-reset">
+              <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+              <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+            </ul>
+            <button type="button" class="btn-reset retailer__catalog-btn">
+              Показать все
+            </button>
+            <div class="retailer__info">
+              <div class="retailer__info-title">Информация</div>
+              <div class="retailer__info-span">О компании</div>
+              <div class="retailer__info-slider x-overflow">
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                  width="auto"
+                  height="158"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                  width="auto"
+                  height="158"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                  width="auto"
+                  height="158"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                  width="auto"
+                  height="158"
+                />
+              </div>
+              <p class="retailer__info-text">
+                Вас приветствует G-Store! Мы рады сообщить, что открыли
+                направление РОЗНИЧНОЙ ТОРГОВЛИ! 5 лет мы занимались и занимаемся
+                ОПТОВЫМИ поставками. ПОЧЕМУ ТАКИЕ НИЗКИЕ ЦЕНЫ? — Везем технику
+                напрямую из ЕВРОПЫ/ДУБАЯ/. — ﻿﻿Bce iPhone
+                SIM+ESim, работают со всеми операторами. —
+                ﻿﻿Активируются, регистрируются с Apple ID и
+                функционируют должным образом! — ﻿﻿На все модели
+                распространяется гарантия на проверку! Почему именно мы? 1.
+                ﻿﻿﻿ВЫ 5 ЛЕТ ПОКУПАЛИ У ТЕХ, КОМУ МЫ
+                ПОСТАВЛЯЕМ, А ТЕПЕРЬ БУДЕТЕ БРАТЬ НАПРЯМУЮ! 2. ПОСТОЯННЫМ
+                КЛИЕНТАМ СКИДКИ И БОНУСЫ! 3. ВСЕГДА В НАЛИЧИИ АКТУАЛЬНЫЕ МОДЕЛИ!
+                Доставка по Нижнему Новгороду Бесплатно! ❗️ Предоставляем
+                гарантию 1 год на все устройства! Всегда в наличии
+                нераспечатанные Новые телефоны всех объёмов памяти и цветов!
+                АКЦИЯ: найдите, где дешевле, и мы предоставим Вам СКИДКУ!
+              </p>
+              <a href="#" class="retailer__link">
+                Читать полностью
+              </a>
+            </div>
+          </div>
+          <div class="tabs__panel">
+            <div class="retailer__info">
+              <div class="retailer__info-title">Информация</div>
+              <div class="retailer__info-span">О компании</div>
+              <div class="retailer__info-slider x-overflow">
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                />
+                <img
+                  loading="lazy"
+                  src="img/slide.png"
+                  alt="Картинка аирподсов"
+                  class="image"
+                />
+              </div>
+              <p class="retailer__info-text">
+                Вас приветствует G-Store! Мы рады сообщить, что открыли
+                направление РОЗНИЧНОЙ ТОРГОВЛИ! 5 лет мы занимались и занимаемся
+                ОПТОВЫМИ поставками. ПОЧЕМУ ТАКИЕ НИЗКИЕ ЦЕНЫ? — Везем технику
+                напрямую из ЕВРОПЫ/ДУБАЯ/. — ﻿﻿Bce iPhone
+                SIM+ESim, работают со всеми операторами. —
+                ﻿﻿Активируются, регистрируются с Apple ID и
+                функционируют должным образом! — ﻿﻿На все модели
+                распространяется гарантия на проверку! Почему именно мы? 1.
+                ﻿﻿﻿ВЫ 5 ЛЕТ ПОКУПАЛИ У ТЕХ, КОМУ МЫ
+                ПОСТАВЛЯЕМ, А ТЕПЕРЬ БУДЕТЕ БРАТЬ НАПРЯМУЮ! 2. ПОСТОЯННЫМ
+                КЛИЕНТАМ СКИДКИ И БОНУСЫ! 3. ВСЕГДА В НАЛИЧИИ АКТУАЛЬНЫЕ МОДЕЛИ!
+                Доставка по Нижнему Новгороду Бесплатно! ❗️ Предоставляем
+                гарантию 1 год на все устройства! Всегда в наличии
+                нераспечатанные Новые телефоны всех объёмов памяти и цветов!
+                АКЦИЯ: найдите, где дешевле, и мы предоставим Вам СКИДКУ!
+              </p>
+              <a href="#" class="retailer__link">
+                Читать полностью
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="retailer__tab is-hidden">
+        <button type="button" class="btn-reset retailer__tab-btn">
+          Написать
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  window.addEventListener("scroll", function() {
+    const scrollY = window.scrollY;
+
+    if (scrollY < 500){
+      document.querySelector(".retailer__tab").classList.add("is-hidden");
+    } else{
+      document.querySelector(".retailer__tab").classList.remove("is-hidden");
+    }
+  })
+</script>
+<div class="graph-modal">
+  <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="radius"
+        >
+          <div class="filter__nav">
+            <button
+              class="btn-reset location-close-btn"
+              aria-label="назад"
+              data-graph-path="location"
+            ></button>
+            <h2 class="filter__title">Радиус</h2>
+            <button type="button" class="btn-reset filter__btn">
+              Сбросить
+            </button>
+          </div>
+          <div class="filter__radius-search">
+            <input
+              type="text"
+              name="searchRadius"
+              id="searchRadius"
+              class="input-reset"
+              placeholder="Москва, проезд Воскресенские Ворота"
+            />
+            <button type="button" class="btn-reset" data-graph-path="location">
+              <img
+                loading="lazy"
+                src="img/close_2.svg"
+                alt="Иконка крестика"
+                class="image"
+                width="20"
+                height="20"
+              />
+            </button>
+          </div>
+          <ul class="radius__list list-reset x-overflow">
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">
+                Не выбран
+              </button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">1 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">2 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">3 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">5 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">10 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">15 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">25 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">50 км</button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">
+                100 км
+              </button>
+            </li>
+            <li class="radius__item">
+              <button type="button" class="btn-reset radius__btn">
+                150 км
+              </button>
+            </li>
+          </ul>
+          <button type="button" class="filter__result btn-reset js-modal-close">
+            Применить
+          </button>
+        </div>
+        <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="region"
+        >
+          <div class="graph-modal__content">
+            <div class="filter">
+              <div class="filter__search">
+                <button
+                  type="button"
+                  class="btn-reset"
+                  data-graph-path="location"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/close_2.svg"
+                    alt="Иконка крестика"
+                    class="image"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+                <input
+                  type="text"
+                  name="searchRegion"
+                  id="searchRegion"
+                  class="input-reset"
+                  placeholder="Регион или город"
+                  oninput='showBtn("regionClear", "searchRegion")'
+                />
+                <button
+                  type="button"
+                  class="btn-reset is-hidden"
+                  onclick='clearInput("regionClear", "searchRegion")'
+                  id="regionClear"
+                >
+                  <img
+                    loading="lazy"
+                    src="img/close.svg"
+                    alt="Иконка крестика"
+                    class="image"
+                    width="24"
+                    height="24"
+                  />
+                </button>
+              </div>
+              <ul class="filter__region-list list-reset">
+                <li class="filter__region-item">
+                  <button type="button" class="btn-reset filter__region-btn">
+                    Все регионы
+                  </button>
+                </li>
+                <li class="filter__region-item">
+                  <button type="button" class="btn-reset filter__region-btn">
+                    Все регионы
+                  </button>
+                </li>
+                <li class="filter__region-item">
+                  <button type="button" class="btn-reset filter__region-btn">
+                    Все регионы
+                  </button>
+                </li>
+                <li class="filter__region-item">
+                  <button type="button" class="btn-reset filter__region-btn">
+                    Все регионы
+                  </button>
+                </li>
+                <li class="filter__region-item">
+                  <button type="button" class="btn-reset filter__region-btn">
+                    Все регионы
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="headerFilter"
+        >
+          <div class="graph-modal__content">
+            <div class="filter">
+              <div class="filter__nav">
+                <button
+                  class="btn-reset graph-modal__close js-modal-close filter-close-btn"
+                  aria-label="Закрыть модальное окно"
+                ></button>
+                <h2 class="filter__title">Фильтры</h2>
+                <button type="button" class="btn-reset filter__btn">
+                  Сбросить
+                </button>
+              </div>
+              <div class="filter__container">
+                <div class="filter__contentItem">
+                  <div class="filter__allTitle">Все категории</div>
+                  <ul class="filter__list list-reset">
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Транспорт
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Недвижимость
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Работа
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Услуги
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Личные вещи
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Для дома и дачи
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Запчасти и аксессуары
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Электроника
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Хобби и отдых
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Животные
+                      </button>
+                    </li>
+                    <li class="filter__item">
+                      <button type="button" class="filter__list-btn btn-reset">
+                        Готовый бизнес и оборудование
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Где искать</div>
+                  <label for="location" class="filter__label">
+                    <button
+                      class="filter__input btn-reset"
+                      id="location"
+                      name="location"
+                      data-graph-path="location"
+                    ></button>
+                    <span class="filter__label-value">
+                      Все регионы
+                      <span class="filter__label-fragment">, радиус</span>
+                    </span>
+                    <svg
+                      width="32"
+                      height="32"
+                      role="img"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      data-icon="chevron"
+                      viewBox="0 0 24 24"
+                      class="mav-13p9cz2"
+                    >
+                      <path
+                        d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+                      ></path>
+                    </svg>
+                  </label>
+                </div>
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Акции</div>
+                  <input
+                    type="checkbox"
+                    name="sale"
+                    id="sale"
+                    class="filter__checkbox"
+                  />
+                  <label class="filter__label" for="sale"> Распродажа </label>
+                </div>
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Цена</div>
+                  <div class="filter__content">
+                    <input
+                      class="filter__price input-reset"
+                      type="number"
+                      name="fromPrice"
+                      id="fromPrice"
+                      placeholder="От"
+                    />
+                    <input
+                      class="filter__price input-reset"
+                      type="number"
+                      name="toPrice"
+                      id="toPrice"
+                      placeholder="до"
+                    />
+                  </div>
+                </div>
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Продавцы</div>
+                  <div class="filter__seller">
+                    <div class="filter__seller-item filter-active-item">
+                      Все
+                    </div>
+                    <div class="filter__seller-item">Частные</div>
+                    <div class="filter__seller-item">Компании</div>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="delivery"
+                      class="filter__checkbox"
+                    />
+                    <label for="delivery" class="filter__label">
+                      С Авито Доставкой
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="credit"
+                      id="credit"
+                      class="filter__checkbox"
+                    />
+                    <label for="credit" class="filter__label">
+                      Оплата в кредит
+                    </label>
+                  </div>
+                </div>
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Сортировка</div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="filterDefault"
+                      id="filterDefault"
+                      class="filter__radio"
+                    />
+                    <label for="filterDefault" class="filter__label">
+                      По умолчанию
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="filterDate"
+                      id="filterDate"
+                      class="filter__radio"
+                    />
+                    <label for="filterDate" class="filter__label">
+                      По дате
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="filterCheaply"
+                      id="filterCheaply"
+                      class="filter__radio"
+                    />
+                    <label for="filterCheaply" class="filter__label">
+                      Дешевле
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="filterExpensive"
+                      id="filterExpensive"
+                      class="filter__radio"
+                    />
+                    <label for="filterExpensive" class="filter__label">
+                      Дороже
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="filterLocation"
+                      id="filterLocation"
+                      class="filter__radio"
+                    />
+                    <label for="filterLocation" class="filter__label">
+                      По удалённости
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="filter__result btn-reset js-modal-close"
+              >
+                Показать объявление
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="location"
+        >
+          <div class="graph-modal__content">
+            <div class="filter">
+              <div class="filter__nav">
+                <button
+                  class="btn-reset location-close-btn"
+                  aria-label="назад"
+                  data-graph-path="headerFilter"
+                ></button>
+                <h2 class="filter__title">Где искать</h2>
+                <button type="button" class="btn-reset filter__btn">
+                  Сбросить
+                </button>
+              </div>
+              <div class="filter__container">
+                <div class="filter__contentItem">
+                  <div class="filter__sectionTitle">Город или регион</div>
+                  <label for="region" class="filter__label">
+                    <button
+                      class="filter__input btn-reset"
+                      id="region"
+                      name="region"
+                      data-graph-path="region"
+                    ></button>
+                    <span class="filter__label-value"> Все регионы </span>
+                    <svg
+                      width="32"
+                      height="32"
+                      role="img"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      data-icon="chevron"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+                      ></path>
+                    </svg>
+                  </label>
+                  <label for="radius" class="filter__label">
+                    <button
+                      class="filter__input btn-reset"
+                      id="radius"
+                      name="radius"
+                      data-graph-path="radius"
+                    ></button>
+                    <span class="filter__label-value filter__label-fragment">
+                      Радиус
+                    </span>
+                    <svg
+                      width="32"
+                      height="32"
+                      role="img"
+                      tabindex="-1"
+                      aria-hidden="true"
+                      data-icon="chevron"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+                      ></path>
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="filter__result btn-reset js-modal-close"
+              >
+                Показать объявление
+              </button>
+            </div>
+          </div>
+        </div>
+</div>
+</main>
+  </div>
+  <script src="https://yastatic.net/share2/share.js"></script>
+</body>
+
+</html>

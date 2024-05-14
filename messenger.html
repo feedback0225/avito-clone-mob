@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+  <title>Авито: мессенджер</title>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <main class="main">
+      <section class="messenger">
+  <div class="container">
+    <div class="messenger__inner">
+      <div class="messenger__header">
+        <div class="messenger__header-top">
+          <div class="messenger__header-search">
+            <input
+              class="input-reset messenger__header-input"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Поиск по сообщениям"
+            />
+            <button type="button" class="btn-reset messenger__search-btn">
+              <img
+                loading="lazy"
+                src="img/close_2.svg"
+                alt="Иконка крестика"
+                class="image"
+                width="16"
+                height="16"
+              />
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn-reset messenger__header-btn"
+          >
+            <img
+              loading="lazy"
+              src="img/more_2.svg"
+              alt="Иконка три точи"
+              class="image"
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+        <button type="button" class="btn-reset messenger__filter">
+          По всем объявлениям
+          <img
+            loading="lazy"
+            src="img/arrow_2.svg"
+            alt="Иконка стрелки"
+            class="image"
+            width="24"
+            height="24"
+          />
+        </button>
+      </div>
+      <ul class="messenger__list list-reset">
+        <li class="messenger__item admin">
+          <img
+            loading="lazy"
+            src="img/admin.png"
+            alt="Поддержка"
+            class="image"
+            width="48"
+            height="48"
+          />
+          <div class="messenger__content">
+            <div class="messenger__title">Поддержка Авито</div>
+            <div class="messenger__text">Будем рады помочь</div>
+          </div>
+        </li>
+        <li class="messenger__item">
+          <img
+            loading="lazy"
+            src="img/logo.svg"
+            alt="Логотип"
+            class="image"
+            width="48"
+            height="48"
+          />
+          <div class="messenger__content">
+            <div class="messenger__title">Авито</div>
+            <div class="messenger__text">
+              Если вам нужно сотрудники, создавайте вакансию
+            </div>
+          </div>
+          <span class="messenger__date">
+            7 апр
+          </span>
+        </li>
+        <li class="messenger__item">
+          <img
+            loading="lazy"
+            src="img/logo.svg"
+            alt="Логотип"
+            class="image"
+            width="48"
+            height="48"
+          />
+          <div class="messenger__content">
+            <div class="messenger__title">Авито</div>
+            <div class="messenger__text">
+              Если вам нужно сотрудники, создавайте вакансию
+            </div>
+          </div>
+          <span class="messenger__date">
+            7 апр
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <section class="tab">
+    <div class="tab__inner">
+        <ul class="tab__list list-reset">
+            <li class="tab__item active-link">
+                <a href="/" class="tab__link">
+                    <img loading='lazy' src="img/logo.svg" alt="Иконка авито" class="image" width='30' height='30' />
+                    <span>Поиск</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="favorites.html" class="tab__link">
+                    <img loading='lazy' src="img/svg/like.svg" alt="Иконка сердечка" class="image" width='30' height='30' />
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="ads.html" class="tab__link">
+                    <img loading='lazy' src="img/add.svg" alt="Иконка Объявление" class="image" width='30' height='30' />
+                    <span>Объявление</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="messenger.html" class="tab__link">
+                    <img loading='lazy' src="img/message.svg" alt="Иконка Сообщение" class="image" width='30' height='30' />
+                    <span>Сообщение</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="profile.html" class="tab__link">
+                    <img loading='lazy' src="img/profile.svg" alt="Иконка Профиль" class="image" width='30' height='30' />
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+  </div>
+</body>
+</html>

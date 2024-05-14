@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="p-header">
+  <div class="container">
+    <div class="p-header__inner">
+      <button type="button" class="btn-reset p-header__btn" onclick="Return()">
+        <img
+          loading="lazy"
+          src="img/arrow.svg"
+          alt="Иконка стрелки"
+          class="image"
+          width="24"
+          height="24"
+          style="rotate: -90deg"
+        />
+      </button>
+      <div class="p-header__content">
+        <button
+          type="button"
+          class="btn-reset p-header__btn ya-share2"
+          data-curtain
+          data-shape="round"
+          data-color-scheme="blackwhite"
+          data-limit="0"
+          data-more-button-type="short"
+          data-services="messenger,vkontakte,odnoklassniki,telegram,twitter,viber,whatsapp,moimir,skype,tumblr,evernote,linkedin,lj,blogger,delicious,digg,reddit,pocket,qzone,renren,sinaWeibo,surfingbird,tencentWeibo"
+        ></button>
+        <button type="button" class="btn-reset p-header__btn">
+          <img
+            loading="lazy"
+            src="img/like_black.svg"
+            alt="Иконка лайка"
+            class="image"
+            width="24"
+            height="24"
+          />
+        </button>
+        <button type="button" class="btn-reset p-header__btn">
+          <img
+            loading="lazy"
+            src="img/cart.svg"
+            alt="Иконка корзины"
+            class="image"
+            width="24"
+            height="24"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  function Return() {
+    window.history.back();
+  }
+  function showBtn(btnId, inputId) {
+    const btn = document.getElementById(btnId);
+    const input = document.getElementById(inputId).value;
+
+    if (input !== "") {
+      btn.classList.remove("is-hidden");
+    } else if (input === "") {
+      btn.classList.add("is-hidden");
+    } else {
+      btn.classList.add("is-hidden");
+    }
+  }
+  function clearInput(btnId, inputId) {
+    const input = document.getElementById(inputId);
+    const btn = document.getElementById(btnId);
+    btn.classList.add("is-hidden");
+    input.value = "";
+  }
+</script>
+
+    <main class="main">
+      <section class="store">
+    <div class="container">
+        <div class="store__inner">
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img loading='lazy' src="img/store-1.png" alt="iPhone 15 Pro, 256 гб SIM+esim" class="image" width='270px' height='350' />
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading='lazy' src="img/store-2.png" alt="iPhone 15 Pro, 256 гб SIM+esim" class="image" width='270px' height='350' />
+                  </div>
+                  <div class="swiper-slide">
+                    <img loading='lazy' src="img/store-3.png" alt="iPhone 15 Pro, 256 гб SIM+esim" class="image" width='270px' height='350' />
+                  </div>
+                </div>
+              </div>
+              <h5 class="store__price">
+                110 000 ₽
+              </h5>
+              <h1 class="store__title">
+                iPhone 15 Pro, 256 гб SIM+esim
+              </h1>
+              <div class="store__rating">
+                <span class="store__rating-value">4,7</span>
+                <span class="store__rating-text">202 отзыва о модели</span>
+              </div>
+              <div class="store__nav">
+                <button type="button" class="btn-reset store__nav-btn">
+                    Купить с доставкой
+                </button>
+                <button type="button" class="btn-reset store__nav-btn">
+                    В корзину
+                </button>
+              </div>
+              <div class="store__delivery">
+                <p class="store__text-delivery">
+                    Доставка от <span class="fragment">99₽</span> Гарантия возврата денег, если товар не подойдёт
+                </p>
+                <a href="#" target='_blank' class="store__link">
+                    Об Авито Доставке
+                </a>
+              </div>
+              <div class="store__user">
+                <h5 class="store__user-title">
+                    Пользователь <span class="fragment">в сети</span>
+                </h5>
+                <p class="store__text">
+                    Отвечает на сообщение около 30 минут
+                </p>
+                <span class="store__user-span">
+                    <span>5,0</span>
+                    <div class="store__user-star">
+                        <svg class="store__user-item">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="store__user-item">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="store__user-item">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="store__user-item">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="store__user-item">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                    </div>
+                    <a href="#" target='_blank' class="store__link">
+                        350 отзывов
+                    </a>
+                </span>
+              </div>
+              <div class="store__contact">
+                <button type="button" class="btn-reset store__btn">
+                    Позвонить
+                </button>
+                <button type="button" class="btn-reset store__btn">
+                    Написать
+                </button>
+              </div>
+              <div class="store__address">
+                <p class="store__text">
+                    <i class="dote" style='background: red;'></i>
+                    Горьковская,
+                    <span class="store__text-fragment">
+                        11-15 мин.
+                        <svg width='9' height='16' role="img" aria-hidden="true" data-icon="WalkingRouteIconRestyle" viewBox="0 0 9 14" fill='var(--grey-color)' ><path fill="gray54" fill-rule="evenodd" d="M6 2.5A1.25 1.25 0 1 0 6 0a1.25 1.25 0 0 0 0 2.5Zm-.005.505a.7.7 0 0 0-.755-.155l-2.5 1-.278.111-.112.279-1 2.5 1.3.52.889-2.221.95-.38L3.82 7.33l-.109.436.35.28L6.392 9.91l.969 3.289 1.343-.396-1.032-3.5-.062-.211-.172-.138-2.149-1.719.591-2.365 2.126 2.126.99-.99-3-3ZM3.43 8.593l-2.5 3.5 1.14.814 2.5-3.5-1.14-.814Z" clip-rule="evenodd"></path></svg>
+                    </span>
+                </p>
+                <p class="store__text">
+                    Нижнегородская обл., Нижний Новгород, пр-т Гагарина, 3
+                </p>
+                <a href="#" target='_blank' class="store__link">
+                    Показать на карте
+                </a>
+              </div>
+              <div class="store__property">
+                <h5 class="store__property-title">
+                    Характеристики
+                </h5>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Тип телефона:
+                    </span>
+                    Мобильные телефоны
+                </p>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Состояние:
+                    </span>
+                    Новое
+                </p>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Производитель:
+                    </span>
+                    Apple
+                </p>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Модель:
+                    </span>
+                    <a href="#" target='_blank' class="store__link">
+                        iPhone 15 Pro
+                    </a>
+                </p>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Встроенная память:
+                    </span>
+                    256 ГБ
+                </p>
+                <p class="store__text">
+                    <span class='store__text-fragment'>
+                        Цвет:
+                    </span>
+                    Синий
+                </p>
+              </div>
+              <div class="store__description">
+                <h5 class="store__description-title">
+                    Описание
+                </h5>
+                <p class="store__text description-text">
+                    СТЕКЛО И ЧЕХОЛ В ПОДАРОК🎁🎁🎁🎁<br><br>РЕЙТИНГ АВИTO ⭐️⭐️⭐️⭐️⭐️<br>🔥Болеe 330 отзывов🔥<br>⚡Мы работаем нa рынкe 7 лет и хорошo зарекомендовали себя среди покупателей⚡<br>Обратившись к нам, вы получитe новоe, оригинальное, запакованноe устройство!<br><br>✅ГОД ГАРАНТИЯ<br>✅31 день на проверку устройства<br>✅Оплата при получении<br>✅Скидки постоянным клиентам<br>✅Перед покупкой проверка на официальном сайте<br>✅Перенос данных и удаленных приложений в подарок<br>✅Трейд-Ин обмен старой техники на новую с доплатой<br>✅Оплата по карте +5% комиссия<br>✅Рассрочка<br>✅Кредит<br>✅САМОВЫВОЗ: каждый день с 08:00 до 23:00<br>✅ДОСТАВКА: по Нижнему Новгороду при покупке аксессуаров БЕСПЛАТНО<br>✅Отправка в регионы компанией СДЭК при 100% предоплате<br>Мы дорожим своей репутацией и гарантируем, что наш товар исключительно новый и оригинальный. Всегда на связи!<br>‼Цена может меняться из-за курса доллара. Уточняйте наличие и цену в сообщениях, либо по телефону. Мы всегда проконсультируем и предложим, что лучше выбрать‼
+                </p>
+              </div>
+              <div class="store__seller">
+                <h5 class="store__seller-title">
+                    Спросите у продавца
+                </h5>
+                <div class="store__seller-message">
+                    <input class='input-reset store__seller-input' type="text" name="message" id="message" value='Здравствуйте! ' />
+                    <button type="button" class="btn-reset store__seller-btn">
+                        <svg class="store__message-send">
+                            <use xlink:href="img/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="store__seller-list list-reset">
+                    <li class="store__item">
+                        <button type="button" class="btn-reset store__list-btn">
+                            Торг уместен?
+                        </button>
+                    </li>
+                    <li class="store__item">
+                        <button type="button" class="btn-reset store__list-btn">
+                            Отправка Авито Доставкой?
+                        </button>
+                    </li>
+                    <li class="store__item">
+                        <button type="button" class="btn-reset store__list-btn">
+                            Когда можно посмотреть?
+                        </button>
+                    </li>
+                </ul>
+              </div>
+              <div class="salesman">
+                <div class="salesman__description">
+                    <div class="salesman__content">
+                        <h5 class="salesman__title">
+                            Пользователь
+                        </h5>
+                        <span class="salesman__type">
+                            Частное лицо
+                        </span>
+                        <span class="store__user-span">
+                            <span>5,0</span>
+                            <div class="store__user-star">
+                                <svg class="store__user-item">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="store__user-item">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="store__user-item">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="store__user-item">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="store__user-item">
+                                    <use xlink:href="img/sprite.svg#star"></use>
+                                </svg>
+                            </div>
+                            <a href="#" target='_blank' class="store__link">
+                                350 отзывов
+                            </a>
+                        </span>
+                        <a href="#" target='_blank' class="store__link">
+                            Подписаться
+                        </a>
+                        <span class="salesman__span">
+                            Эковклад -624кг CO₂
+                        </span>
+                    </div>
+                    <img loading='lazy' src="img/user.png" alt="Пользователь" class="image" width='64' height='64' />
+                </div>
+                <details class="store__details">
+                    <summary class="store__summary">
+                        Похожие объявления
+                    </summary>
+                    <ul class="store__list list-reset">
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+                <details class="store__details">
+                    <summary class="store__summary">
+                        Товары с доставкой
+                    </summary>
+                    <ul class="store__list list-reset">
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                        <li class="store__item">
+                            <picture>
+                                <source srcset="img/store.webp" type='image/webp' />
+                                <source srcset="img/store.png" type='image/png' />
+                                <img src="img/store.png" alt="iPhone 15 Pro, 256 ГБ" class="image" />
+                            </picture>
+                            <div class="store__item-description">
+                                <div class="store__item-content">
+                                    <span class="store__item-title">iPhone 15 Pro, 256 ГБ</span>
+                                    <span class="store__item-price">100 999 ₽</span>
+                                </div>
+                                <button type="button" class="btn-reset store__item-btn">
+                                    <img loading='lazy' src="img/like_black.svg" alt="Иконка сердце" class="image" width='18' height='16' />
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </details>
+                <button type="button" class="btn-reset store__report">
+                    Пожаловатся на объявление
+                </button>
+                <div class="store__info">
+                    <span>Объявление № 3 501 734 677</span>
+                    <span>Сегодня, 12:13</span>
+                    <span>1462 просмотра</span>
+                    <span class="store__info-path">
+                        Телефоны  Мобильные телефоны  Apple
+                    </span>
+                </div>
+              </div>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 2,
+                  spaceBetween: 5,
+                  freeMode: true,
+                });
+              </script>
+              <div class="store__tab hidden-bottom">
+                <button type="button" class="btn-reset store__tab-btn">
+                    Купить с доставкой
+                </button>
+                <button type="button" class="btn-reset store__tab-btn">
+                    В корзину
+                </button>
+              </div>
+              <script>
+                  window.addEventListener("scroll", function() {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollTop > 500){
+                        document.querySelector(".store__tab").classList.remove("hidden-bottom");
+                    } else{
+                        document.querySelector(".store__tab").classList.add("hidden-bottom");
+                    }
+                })
+              </script>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <ul class="footer__list list-reset">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Помощь
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        О компании
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Вакансии
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Безопасность
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Реклама на сайте
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Оферта
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Авито Журнал
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Блог
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Политика о данных пользователей
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Правила Авито
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                © ООО «КЕХ еКоммерц» 2007–2024
+            </p>
+            <div class="footer__content">
+                <a href="#" class="footer__link">
+                    Мобильное приложение
+                </a>
+                <a href="#" class="footer__link">
+                    Полная версия
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+</html>
+<script src="https://yastatic.net/share2/share.js"></script>

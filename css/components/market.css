@@ -1,0 +1,14 @@
+.market__inner {
+  padding-top: 50px;
+}
+.market__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+/*# sourceMappingURL=market.css.map */

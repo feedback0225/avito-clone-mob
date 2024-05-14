@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+  <title>Авито: недвижимость, транспорт, работа, услуги, вещи</title>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__search">
+        <input
+          class="header__search-input input-reset"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Поиск во всех регионах"
+          onclick='ClickToEvent(".header__search-input", ".js-close-header-menu", ".js-header-search-btn", ".header__search-link")'
+        />
+        <button
+          type="button"
+          class="header__search-btn btn-reset js-header-search-btn"
+          data-graph-path="headerFilter"
+        >
+          <svg
+            loading="lazy"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="15.5" cy="17" r="2.5" fill="currentColor"></circle>
+            <rect
+              x="3"
+              y="7"
+              width="18"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+            <circle cx="8.5" cy="8" r="2.5" fill="currentColor"></circle>
+            <rect
+              x="3"
+              y="16"
+              width="18"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+          </svg>
+        </button>
+      </div>
+      <a href="cart.html" class="header__btn js-header-search-btn">
+        <svg
+          loading="lazy"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="6" cy="21" r="2" fill="var(--dark-color)"></circle>
+          <path
+            d="M19 21C19 22.1046 18.1046 23 17 23C15.8954 23 15 22.1046 15 21C15 19.8954 15.8954 19 17 19C18.1046 19 19 19.8954 19 21Z"
+            fill="var(--dark-color)"
+          ></path>
+          <path
+            d="M2 2.5L6.5 16.3214L18.3333 15.2381L20.5 6.1H3.25"
+            stroke="var(--dark-color)"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+      </a>
+      <button
+        class="header__search-link is-hidden btn-reset"
+        onclick='ClickToEventClose(".header__menu", ".js-close-header-menu", ".js-header-search-btn", ".header__search-link");body.classList.remove("overflow-hidden")'
+      >
+        Отменить
+      </button>
+    </div>
+  </div>
+  <div class="header__fixed active-fixed-block" id="fixedBlock">
+    <div class="container">
+      <ul class="header__fixed-list list-reset x-overflow">
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Авто </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Услуги </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Электроника </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Недвижимость </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Для дома и дачи </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Работа </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Запчасти и аксессуары </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link">
+            Одежда, обувь и аксессуары
+          </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Товары для детей </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Хобби и отдых </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Животные </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Путешествия </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link">
+            Готовый бизнес и оборудования
+          </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Красота и здоровье </a>
+        </li>
+        <li class="header__fixed-item">
+          <a href="#" class="header__fixed-link"> Все категории </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<script>
+  var prevScrollpos = window.pageYOffset;
+  var fixedBlock = document.getElementById("fixedBlock");
+
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos && currentScrollPos !== 0) {
+      fixedBlock.classList.remove("active-fixed-block");
+    } else {
+      fixedBlock.classList.add("active-fixed-block");
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  function showBtn(btnId, inputId) {
+    const btn = document.getElementById(btnId);
+    const input = document.getElementById(inputId).value;
+
+    if (input !== "") {
+      btn.classList.remove("is-hidden");
+    } else if (input === "") {
+      btn.classList.add("is-hidden");
+    } else {
+      btn.classList.add("is-hidden");
+    }
+  }
+  function clearInput(btnId, inputId) {
+    const input = document.getElementById(inputId);
+    const btn = document.getElementById(btnId);
+    btn.classList.add("is-hidden");
+    input.value = "";
+  }
+</script>
+
+<div class="header__menu is-hidden js-close-header-menu">
+  <div class="header__content">
+    <ul class="header__menu-list list-reset">
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-1.png"
+            alt="Иконка Вакансии"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Вакансии</span>
+            <span class="header__menu-text">Работа</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-2.png"
+            alt="Иконка Автомобиля"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Автомобили</span>
+            <span class="header__menu-text">Транспорт</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-3.png"
+            alt="Иконка Квартиры"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Снять квартиру (посуточно)</span>
+            <span class="header__menu-text">Недвижимость</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-3.png"
+            alt="Иконка Квартиры"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Снять квартиру (длительно)</span>
+            <span class="header__menu-text">Недвижимость</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-4.png"
+            alt="Иконка Смартфона"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Мобильные телефоны</span>
+            <span class="header__menu-text">Электроника</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-3.png"
+            alt="Иконка Квартиры"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Купить квартиру</span>
+            <span class="header__menu-text">Недвижимость</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-2.png"
+            alt="Иконка Автомобиля"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Автомобили с пробегом</span>
+            <span class="header__menu-text">Транспорт</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+      <li class="header__menu-item">
+        <div class="header__menu-icon">
+          <img
+            src="img/menu-5.png"
+            alt="Иконка Частного Дома"
+            class="image"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header__menu-description">
+          <div class="header__menu-content">
+            <span class="header__menu-title">Купить дом</span>
+            <span class="header__menu-text">Недвижимость</span>
+          </div>
+          <svg
+            class="header__menu-arrow"
+            aria-hidden="true"
+            data-icon="chevron"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"
+            ></path>
+          </svg>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="header__menu-bg"
+    onclick='ClickToEventClose(".header__menu", ".js-close-header-menu", ".js-header-search-btn", ".header__search-link");body.classList.remove("overflow-hidden")'
+  ></div>
+</div>
+<script>
+  function ClickToEvent(pathClass, targetClass, btnClass, linkClass) {
+    const path = document.querySelector(pathClass);
+    const target = document.querySelector(targetClass);
+    const btn = document.querySelectorAll(btnClass);
+    const link = document.querySelector(linkClass);
+
+    btn.forEach(function (btns) {
+      btns.classList.add("is-hidden");
+    });
+    document.querySelector(".page__body").classList.add("overflow-hidden");
+    link.classList.remove("is-hidden");
+    target.classList.remove("is-hidden");
+  }
+
+  function ClickToEventClose(pathClass, targetClass, btnClass, linkClass) {
+    const path = document.querySelector(pathClass);
+    const target = document.querySelector(targetClass);
+    const btn = document.querySelectorAll(btnClass);
+    const link = document.querySelector(linkClass);
+
+    btn.forEach(function (btns) {
+      btns.classList.remove("is-hidden");
+    });
+    document.querySelector(".page__body").classList.remove("overflow-hidden");
+    link.classList.add("is-hidden");
+    target.classList.add("is-hidden");
+  }
+</script>
+
+    <main class="main">
+      <section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <ul class="hero__list list-reset x-overflow">
+                <li class="hero__item">
+                    <a href="#" class="hero__link">
+                        <img loading='lazy' src="img/hero-1.png" alt="Иконка звезд" class="image" width='20' height='20' />
+                        <span>Премиум</span>
+                    </a>
+                </li>
+                <li class="hero__item">
+                    <a href="#" class="hero__link">
+                        <img loading='lazy' src="img/hero-2.png" alt="Иконка чемодана" class="image" width='20' height='20' />
+                        <span>Путешествия</span>
+                    </a>
+                </li>
+                <li class="hero__item">
+                    <a href="#" class="hero__link">
+                        <img loading='lazy' src="img/hero-3.png" alt="Иконка ключа" class="image" width='20' height='20' />
+                        <span>Всё для авто</span>
+                    </a>
+                </li>
+            </ul>
+            <nav class="menu x-overflow">
+                <div class="menu__content">
+                    <ul class="menu__list list-reset">
+                        <li class="menu__item category-auto">
+                            <a href="transport.html" class="menu__link">
+                                <span class="menu__title">
+                                    Авто
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-immovables">
+                            <a href="kvartiry.html" class="menu__link">
+                                <span class="menu__title">
+                                    Недвижимость
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-work">
+                            <a href="rabota.html" class="menu__link">
+                                <span class="menu__title">
+                                    Работа
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-cloth">
+                            <a href="lichnye_veschi.html" class="menu__link">
+                                <span class="menu__title">
+                                    Одежда, обувь, аксессуары
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-hobby">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Хобби и отдых
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-animals">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Животные
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-buisness">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Готовый бизнес и оборудование
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-service">
+                            <a href="predlozheniya_uslug.html" class="menu__link">
+                                <span class="menu__title">
+                                    Услуги
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-electronic">
+                            <a href="bytovaya_elektronika.html" class="menu__link">
+                                <span class="menu__title">
+                                    Электроника
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-dacha">
+                            <a href="dlya_doma_i_dachi.html" class="menu__link">
+                                <span class="menu__title">
+                                    Для дома и дачи
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-part">
+                            <a href="zapchasti_i_aksessuary.html" class="menu__link">
+                                <span class="menu__title">
+                                    Запчасти
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-products">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Товары для детей
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-travel">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Путешествия
+                                </span>
+                            </a>
+                        </li>
+                        <li class="menu__item category-health">
+                            <a href="#" class="menu__link">
+                                <span class="menu__title">
+                                    Красота и здоровье
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="menu__link-all">
+                    <span class='menu__link-span'><span>Показать все категории</span><svg loading='lazy' role="img" viewBox="0 0 10 10" width='14' height='10'><path fill="black" d="M7.48 5.47 4.612 8.338a.542.542 0 0 0 .766.767L9.171 5.31a.542.542 0 0 0 0-.766L5.378.752a.542.542 0 0 0-.766.766L7.48 4.386H1.202a.542.542 0 1 0 0 1.084H7.48Z"></path></svg></span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+      <section class="stories x-overflow">
+    <div class="container">
+        <div class="stories__inner">
+            <a href="#">
+                <picture>
+                    <source srcset="img/orsk_help.webp" type='image/webp' />
+                    <source srcset="img/orsk_help.png" type='image/png' />
+                    <img src="img/orsk_help.png" alt="Баннер о помощи Оренбургской области"  class="image stories__banner" width='192' height='128' />
+                </picture>
+            </a>
+            <ul class="stories__list list-reset">
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+                <li class="stories__item">
+                    <button class='btn-reset stories__btn' type="button" data-graph-path="stories">
+                        <img src="img/stories.png" alt="Картинка сторис" class="image viewed-stories" width='92' height='92'>
+                        <span>
+                            Оригиналы в Премиуме
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+      <section class="catalog">
+  <div class="container">
+    <div class="catalog__inner">
+      <h2 class="catalog__title">Рекомендации</h2>
+      <ul class="catalog__list list-reset">
+        <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+        <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+        <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+        <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+ <li class="card">
+  <a href="#">
+    <picture>
+      <source srcset="img/card.webp" type="image/webp" />
+      <source srcset="img/card.png" type="image/png" />
+      <img src="img/card.png" alt="Ford Focus 2.0 MT, 2006" class="image" />
+    </picture>
+  </a>
+  <div class="card__info">
+    <div class="card__description">
+      <a href="#" class="card__title">
+        Ford Focus 2.0 MT, 2006, 225 000 км
+      </a>
+      <a href="#" class="card__price"> 520 000 ₽ </a>
+      <a href="#" class="card__location"> Тюмень, р-н Центральный </a>
+      <a href="#" class="card__date"> 8 апреля, 11:39 </a>
+    </div>
+    <div class="card__menu">
+      <button class="btn-reset card__menu-btn" type="button">
+        <img
+          src="img/favourite.svg"
+          alt="Иконка сердца"
+          class="image"
+          width="20"
+          height="20"
+        />
+      </button>
+      <button
+        type="button"
+        class="btn-reset card__menu-btn"
+        data-graph-path="cardMoreModal"
+        data-graph-animation="fadeInUp"
+        data-graph-speed="200"
+      >
+        <img
+          src="img/more.svg"
+          alt="Иконка три точки"
+          class="image"
+          width="16"
+          height="16"
+        />
+      </button>
+    </div>
+  </div>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="graph-modal">
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="cardMoreModal"
+  >
+    <div class="graph-modal__content">
+        <div class="more">
+            <div class="more__title">
+                Скрыть рекомендацию
+            </div>
+            <ul class="more__list list-reset">
+                <li class="more__item">
+                    <p class="more__text">
+                        Не интересует это объявление
+                    </p>
+                </li>
+                <li class="more__item">
+                    <p class="more__text">
+                        Не интересует эта категория
+                    </p>
+                </li>
+                <li class="more__item">
+                    <p class="more__text">
+                        Не подходит город или регион
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="headerFilter"
+  >
+    <div class="graph-modal__content">
+        <div class="filter">
+          <div class="filter__nav">
+            <button class="btn-reset graph-modal__close js-modal-close filter-close-btn" aria-label="Закрыть модальное окно"></button>
+            <h2 class="filter__title">Фильтры</h2>
+            <button type="button" class="btn-reset filter__btn">
+              Сбросить
+            </button>
+          </div>
+          <div class="filter__container">
+            <div class="filter__contentItem">
+              <div class="filter__allTitle">
+                Все категории
+              </div>
+              <ul class="filter__list list-reset">
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Транспорт
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Недвижимость
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Работа
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Услуги
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Личные вещи
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Для дома и дачи
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Запчасти и аксессуары
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Электроника
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Хобби и отдых
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Животные
+                  </button>
+                </li>
+                <li class="filter__item">
+                  <button type="button" class="filter__list-btn btn-reset">
+                    Готовый бизнес и оборудование
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Где искать
+              </div>
+              <label for="location" class="filter__label">
+                <button class='filter__input btn-reset' id="location" name='location' data-graph-path='location'></button>
+                <span class="filter__label-value">
+                  Все регионы <span class="filter__label-fragment">, радиус</span>
+                </span>
+                <svg width='32' height='32' role="img" tabindex="-1" aria-hidden="true" data-icon="chevron" viewBox="0 0 24 24" name="chevron" class="mav-13p9cz2"><path d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"></path></svg>
+              </label>
+            </div>
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Акции
+              </div>
+              <input type="checkbox" name="sale" id="sale" class="filter__checkbox">
+              <label class='filter__label' for="sale">
+                Распродажа
+              </label>
+            </div>
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Цена
+              </div>
+              <div class="filter__content">
+                <input class='filter__price input-reset' type="number" name="fromPrice" id="fromPrice" placeholder='От'>
+                <input class='filter__price input-reset' type="number" name="toPrice" id="toPrice" placeholder='до'>
+              </div>
+            </div>
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Продавцы
+              </div>
+              <div class="filter__seller">
+                <div class="filter__seller-item filter-active-item">Все</div>
+                <div class="filter__seller-item">Частные</div>
+                <div class="filter__seller-item">Компании</div>
+              </div>
+              <div>
+                <input type="checkbox" name="delivery" id="delivery" class="filter__checkbox">
+                <label for="delivery" class="filter__label">
+                  С Авито Доставкой
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="credit" id="credit" class="filter__checkbox">
+                <label for="credit" class="filter__label">
+                  Оплата в кредит
+                </label>
+              </div>
+            </div>
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Сортировка
+              </div>
+              <div>
+                <input type="radio" name="filterDefault" id="filterDefault" class="filter__radio">
+                <label for="filterDefault" class="filter__label">
+                  По умолчанию
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="filterDate" id="filterDate" class="filter__radio">
+                <label for="filterDate" class="filter__label">
+                  По дате
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="filterCheaply" id="filterCheaply" class="filter__radio">
+                <label for="filterCheaply" class="filter__label">
+                  Дешевле
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="filterExpensive" id="filterExpensive" class="filter__radio">
+                <label for="filterExpensive" class="filter__label">
+                  Дороже
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="filterLocation" id="filterLocation" class="filter__radio">
+                <label for="filterLocation" class="filter__label">
+                  По удалённости
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="filter__result btn-reset js-modal-close">
+            Показать объявление
+          </button>
+        </div>
+    </div>
+  </div>
+  <div
+      class="graph-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="location"
+    >
+      <div class="graph-modal__content">
+        <div class="filter">
+          <div class="filter__nav">
+            <button class="btn-reset location-close-btn" aria-label="назад" data-graph-path="headerFilter"></button>
+            <h2 class="filter__title">Где искать</h2>
+            <button type="button" class="btn-reset filter__btn">
+              Сбросить
+            </button>
+          </div>
+          <div class="filter__container">
+            <div class="filter__contentItem">
+              <div class="filter__sectionTitle">
+                Город или регион
+              </div>
+              <label for="region" class="filter__label">
+                <button class='filter__input btn-reset' id="region" name='region' data-graph-path='region'></button>
+                <span class="filter__label-value">
+                  Все регионы
+                </span>
+                <svg width='32' height='32' role="img" tabindex="-1" aria-hidden="true" data-icon="chevron" viewBox="0 0 24 24" name="chevron" class="mav-13p9cz2"><path d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"></path></svg>
+              </label>
+              <label for="radius" class="filter__label">
+                <button class='filter__input btn-reset' id="radius" name="radius" data-graph-path='radius'></button>
+                <span class="filter__label-value filter__label-fragment">
+                  Радиус
+                </span>
+                <svg width='32' height='32' role="img" tabindex="-1" aria-hidden="true" data-icon="chevron" viewBox="0 0 24 24" name="chevron" class="mav-13p9cz2"><path d="M4.8 16.2a1 1 0 0 0 1.4 0l6.3-6.29 6.3 6.3a1 1 0 0 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0l-7 7a1 1 0 0 0 0 1.42Z"></path></svg>
+              </label>
+            </div>
+          </div>
+          <button type="button" class="filter__result btn-reset js-modal-close">
+            Показать объявление
+          </button>
+        </div>
+      </div>
+  </div>
+  <div
+      class="graph-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="radius"
+    >
+    <div class="filter__nav">
+      <button class="btn-reset location-close-btn" aria-label="назад" data-graph-path="location"></button>
+      <h2 class="filter__title">Радиус</h2>
+      <button type="button" class="btn-reset filter__btn">
+        Сбросить
+      </button>
+    </div>
+    <div class="filter__radius-search">
+      <input type="text" name="searchRadius" id="searchRadius" class="input-reset" placeholder='Москва, проезд Воскресенские Ворота' />
+      <button type="button" class="btn-reset" data-graph-path='location'>
+        <img loading='lazy' src="img/close_2.svg" alt="Иконка крестика" class="image" width='20' height='20' />
+      </button>
+    </div>
+    <ul class="radius__list list-reset x-overflow">
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          Не выбран
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          1 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          2 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          3 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          5 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          10 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          15 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          25 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          50 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          100 км
+        </button>
+      </li>
+      <li class="radius__item">
+        <button type="button" class="btn-reset radius__btn">
+          150 км
+        </button>
+      </li>
+    </ul>
+    <button type="button" class="filter__result btn-reset js-modal-close">
+      Применить
+    </button>
+  </div>
+  <div
+      class="graph-modal__container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="region"
+    >
+      <div class="graph-modal__content">
+        <div class="filter">
+          <div class="filter__search">
+            <button type="button" class="btn-reset" data-graph-path='location'>
+              <img loading='lazy' src="img/close_2.svg" alt="Иконка крестика" class="image" width='24' height='24' />
+            </button>
+            <input type="text" name="searchRegion" id="searchRegion" class="input-reset" placeholder='Регион или город' oninput='showBtn("regionClear", "searchRegion")' />
+            <button type="button" class="btn-reset is-hidden" onclick='clearInput("regionClear", "searchRegion")' id='regionClear'>
+              <img loading='lazy' src="img/close.svg" alt="Иконка крестика" class="image" width='24' height='24' />
+            </button>
+          </div>
+          <ul class="filter__region-list list-reset">
+            <li class="filter__region-item">
+              <button type="button" class="btn-reset filter__region-btn">
+                Все регионы
+              </button>
+            </li>
+            <li class="filter__region-item">
+              <button type="button" class="btn-reset filter__region-btn">
+                Все регионы
+              </button>
+            </li>
+            <li class="filter__region-item">
+              <button type="button" class="btn-reset filter__region-btn">
+                Все регионы
+              </button>
+            </li>
+            <li class="filter__region-item">
+              <button type="button" class="btn-reset filter__region-btn">
+                Все регионы
+              </button>
+            </li>
+            <li class="filter__region-item">
+              <button type="button" class="btn-reset filter__region-btn">
+                Все регионы
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div
+      class="graph-modal__container stories-modal-container"
+      role="dialog"
+      aria-modal="true"
+      data-graph-target="stories"
+    >
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+          <div class="stories-modal" style="background-image: url(img/stories-1.png);">
+            <div class="stories__nav">
+                <div class="stories-slide"></div>
+                <div class="stories-slide"></div>
+                <div class="stories-slide"></div>
+            </div>
+            <div class="stories__wrapper">
+                <div class="stories__title">Оригиналы стали доступнее</div>
+                <div class="stories__text">Собрали в Премиуме брендовые товары — новые и ресейл. Рассказываем, какие вещи попадают в раздел и как мы их проверяем.</div>
+                <a href="#" class="stories__link">
+                    За покупками
+                </a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+    </main>
+    <section class="tab">
+    <div class="tab__inner">
+        <ul class="tab__list list-reset">
+            <li class="tab__item active-link">
+                <a href="/" class="tab__link">
+                    <img loading='lazy' src="img/logo.svg" alt="Иконка авито" class="image" width='30' height='30' />
+                    <span>Поиск</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="favorites.html" class="tab__link">
+                    <img loading='lazy' src="img/svg/like.svg" alt="Иконка сердечка" class="image" width='30' height='30' />
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="ads.html" class="tab__link">
+                    <img loading='lazy' src="img/add.svg" alt="Иконка Объявление" class="image" width='30' height='30' />
+                    <span>Объявление</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="messenger.html" class="tab__link">
+                    <img loading='lazy' src="img/message.svg" alt="Иконка Сообщение" class="image" width='30' height='30' />
+                    <span>Сообщение</span>
+                </a>
+            </li>
+            <li class="tab__item">
+                <a href="profile.html" class="tab__link">
+                    <img loading='lazy' src="img/profile.svg" alt="Иконка Профиль" class="image" width='30' height='30' />
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <ul class="footer__list list-reset">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Помощь
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        О компании
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Вакансии
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Безопасность
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Реклама на сайте
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Оферта
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Авито Журнал
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Блог
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Политика о данных пользователей
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        Правила Авито
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                © ООО «КЕХ еКоммерц» 2007–2024
+            </p>
+            <div class="footer__content">
+                <a href="#" class="footer__link">
+                    Мобильное приложение
+                </a>
+                <a href="#" class="footer__link">
+                    Полная версия
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  </div>
+</body>
+</html>

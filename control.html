@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#111111" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraLight.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Medium.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-Bold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="fonts/Manrope-ExtraBold.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+<script defer src="js/main.js"></script>
+
+  <title>Авито: недвижимость, транспорт, работа, услуги, вещи</title>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="p-header">
+      <div class="container">
+        <div class="p-header__inner">
+          <button
+            type="button"
+            class="btn-reset p-header__btn"
+            onclick="Return()"
+          >
+            <img
+              loading="lazy"
+              src="img/arrow.svg"
+              alt="Иконка стрелки"
+              class="image"
+              width="24"
+              height="24"
+              style="rotate: -90deg"
+            />
+          </button>
+          <a href="#" class="control__header-link">
+            Как выглядит мой профиль
+          </a>
+        </div>
+      </div>
+    </header>
+    <script>
+      function Return() {
+        window.history.back();
+      }
+    </script>
+    <main class="main">
+      <section class="control">
+  <div class="container">
+    <div class="control__inner">
+      <h1 class="control__title">
+        Управление профилем
+      </h1>
+      <div class="tabs" data-tabs="control">
+        <div class="control__nav">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item">
+              <button class="tabs__nav-btn btn-reset" type="button">
+                Основные данные
+              </button>
+            </li>
+            <li class="tabs__nav-item">
+              <button class="tabs__nav-btn btn-reset" type="button">
+                Вид профиля
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__content">
+          <div class="tabs__panel">
+              <div class="control__user">
+                <div class="control__user-description">
+                  <button type="button" class="btn-reset control__text">
+                    Иван Иванов
+                    <img loading='lazy' src="img/edit.svg" alt="Иконка редактирование" class="image" width='15' height='20' />
+                  </button>
+                  <p class="control__text">
+                    Частное лицо
+                  </p>
+                  <p class="control__text">
+                    Номер профиля 377 211 761
+                  </p>
+                  <p class="control__text">
+                    На Авито с 17 апреля 2024
+                  </p>
+                </div>
+                <div class="control__user-picture" style='background-image: url(img/comment.png);'>
+                  <input class='input-reset' type="file" name="avatar" id="avatar" />
+                </div>
+              </div>
+              <div class="control__pin">
+                <div class="control__tab-title">
+                  Значки
+                </div>
+                <p class="control__text">
+                  Видны всем в вашем профиле.
+                </p>
+                <div class="control__pin-phone">
+                  <img loading='lazy' src="img/success.png" alt="Иконка птички" class="image" width='20' height='20' />
+                  <span class="control__phone-text">
+                    Телефон подтверждён
+                  </span>
+                </div>
+              </div>
+              <div class="control__pin">
+                <div class="control__tab-title">
+                  Подтверждение данных
+                </div>
+                <span class="control__pin-title">
+                  Видны всем в вашем профиле.
+                </span>
+                <span class="control__pin-text">
+                  По документам, личному кабинету в банке или через Госуслуги
+                </span>
+                <span class="control__pin-title">
+                  Для самозанятых
+                </span>
+                <span class="control__pin-text">
+                  По профилю на Госуслугах, Tinkoff ID или Сбер ID
+                </span>
+                <span class="control__pin-title">
+                  Для юридических лиц и ИП
+                </span>
+                <span class="control__pin-text">
+                  По реквизитам или личному кабинету в банке
+                </span>
+              </div>
+              <div class="control__container">
+                <div class="control__title">
+                  Привязка сообщества
+                </div>
+                <p class="control__vkText">
+                  Бизнес-сообщество ВКонтакте
+                </p>
+                <p class="control__container-text">
+                  Вы должны быть администратором
+                </p>
+              </div>
+          </div>
+          <div class="tabs__panel ">
+            <div class="manage">
+              <article class="manage__article">
+                <div class="manage__article-title">
+                  У 2 млн пользователей профессиональный профиль
+                </div>
+                <p class="manage__article-text">
+                  Сделайте себе такой и заполните его. В среднем это приносит 11% больше просмотров от людей, которые изучают профили перед сделкой.
+                </p>
+                <a href="#" class="manage__article-link">
+                  Улучшить профиль
+                </a>
+              </article>
+              <div class="manage__hat">
+                <div class="manage__hat-container">
+                  <div class="manage__hat-title">
+                    Текущий вид
+                  </div>
+                  <div class="manage__hat-text">
+                    Обычный профиль
+                  </div>
+                </div>
+                <a href="#" class="manage__hat-link">
+                  <img loading='lazy' src="img/edit.svg" alt="Иконка редактирование" class="image" width='15' height='20' />
+                </a>
+              </div>
+              <div class="manage__container">
+                <div class="manage__item">
+                  <div class="manage__title">
+                    Фотографии
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <div class="manage__avatar">
+                    <img loading='lazy' src="img/photo.svg" alt="Иконка редактирование" class="image" width='35' height='35' />
+                    <span>Добавить</span>
+                    <input class='input-reset' type="file" name="avatar" />
+                  </div>
+                </div>
+                <div class="manage__item">
+                  <div class="manage__title">
+                    О Компании
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <button type="button" class="btn-reset manage__btn">
+                    Заполнить
+                  </button>
+                </div>
+                <div class="manage__item">
+                  <div class="manage__title">
+                    Краткое описание
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <button type="button" class="btn-reset manage__btn">
+                    Заполнить
+                  </button>
+                </div>
+                <div class="manage__item">
+                  <div class="manage__title">
+                    Адрес на карте
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <button type="button" class="btn-reset manage__btn">
+                    Заполнить
+                  </button>
+                </div>
+                <div class="manage__item">
+                  <div class="manage__title">
+                    Доставка
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <button type="button" class="btn-reset manage__btn">
+                    Заполнить
+                  </button>
+                </div>
+                <div class="manage__item">
+                  <div class="manage__title">
+                    Оплата
+                  </div>
+                  <div class="manage__text">
+                    Покажите себя, сотрудников, примеры работ, офис или торговый зал. Живым фотографиям люди доверяют больше
+                  </div>
+                  <button type="button" class="btn-reset manage__btn">
+                    Заполнить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
